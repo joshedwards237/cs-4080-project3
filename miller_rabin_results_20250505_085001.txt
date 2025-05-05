@@ -1,0 +1,314 @@
+================================================================================
+MILLER-RABIN PRIMALITY TEST EXPERIMENT RESULTS
+Generated on: 2025-05-05 08:50:01
+================================================================================
+
+EXPERIMENT PARAMETERS
+----------------------------------------
+k values tested: [1, 2, 3, 4, 5, 10, 15, 20]
+Number of Carmichael numbers tested: 16
+Total ranges tested: 36
+
+================================================================================
+
+OVERALL RESULTS BY NUMBER OF ROUNDS
+----------------------------------------
+
+k = 1:
+  Total composites tested: 10,097
+  False positives found: 14
+  Overall error rate: 0.00138655
+
+  Ranges with false positives:
+
+  Range 1,679 to 1,779:
+    Composites tested: 89
+    False positives found: 1
+    Error rate: 0.01123596
+    Examples: 1729
+
+  Range 2,771 to 2,871:
+    Composites tested: 88
+    False positives found: 2
+    Error rate: 0.02272727
+    Examples: 2821, 2871
+
+  Range 10,535 to 10,635:
+    Composites tested: 92
+    False positives found: 2
+    Error rate: 0.02173913
+    Examples: 10565, 10585
+
+  Range 15,791 to 15,891:
+    Composites tested: 90
+    False positives found: 1
+    Error rate: 0.01111111
+    Examples: 15841
+
+  Range 1,000 to 5,000:
+    Composites tested: 3,500
+    False positives found: 7
+    Error rate: 0.00200000
+    Examples: 1729, 1921, 2465, 2565, 3277
+
+  Range 9,900 to 10,100:
+    Composites tested: 181
+    False positives found: 1
+    Error rate: 0.00552486
+    Examples: 9937
+
+k = 2:
+  Total composites tested: 10,097
+  False positives found: 33
+  Overall error rate: 0.00326830
+
+  Ranges with false positives:
+
+  Range 511 to 611:
+    Composites tested: 87
+    False positives found: 1
+    Error rate: 0.01149425
+    Examples: 537
+
+  Range 1,055 to 1,155:
+    Composites tested: 87
+    False positives found: 1
+    Error rate: 0.01149425
+    Examples: 1105
+
+  Range 1,679 to 1,779:
+    Composites tested: 89
+    False positives found: 4
+    Error rate: 0.04494382
+    Examples: 1685, 1729, 1765, 1779
+
+  Range 3,408 to 3,508:
+    Composites tested: 91
+    False positives found: 1
+    Error rate: 0.01098901
+    Examples: 3439
+
+  Range 6,551 to 6,651:
+    Composites tested: 90
+    False positives found: 1
+    Error rate: 0.01111111
+    Examples: 6561
+
+  Range 8,861 to 8,961:
+    Composites tested: 91
+    False positives found: 1
+    Error rate: 0.01098901
+    Examples: 8911
+
+  Range 10,535 to 10,635:
+    Composites tested: 92
+    False positives found: 1
+    Error rate: 0.01086957
+    Examples: 10621
+
+  Range 15,791 to 15,891:
+    Composites tested: 90
+    False positives found: 1
+    Error rate: 0.01111111
+    Examples: 15841
+
+  Range 58,632 to 58,732:
+    Composites tested: 93
+    False positives found: 1
+    Error rate: 0.01075269
+    Examples: 58731
+
+  Range 1,000 to 5,000:
+    Composites tested: 3,500
+    False positives found: 20
+    Error rate: 0.00571429
+    Examples: 1023, 1125, 1281, 1369, 1547
+
+  Range 9,900 to 10,100:
+    Composites tested: 181
+    False positives found: 1
+    Error rate: 0.00552486
+    Examples: 10081
+
+k = 3:
+  Total composites tested: 10,097
+  False positives found: 5
+  Overall error rate: 0.00049520
+
+  Ranges with false positives:
+
+  Range 1,679 to 1,779:
+    Composites tested: 89
+    False positives found: 1
+    Error rate: 0.01123596
+    Examples: 1729
+
+  Range 6,551 to 6,651:
+    Composites tested: 90
+    False positives found: 1
+    Error rate: 0.01111111
+    Examples: 6561
+
+  Range 1,000 to 5,000:
+    Composites tested: 3,500
+    False positives found: 3
+    Error rate: 0.00085714
+    Examples: 1729, 2145, 4681
+
+k = 4:
+  Total composites tested: 10,097
+  False positives found: 2
+  Overall error rate: 0.00019808
+
+  Ranges with false positives:
+
+  Range 15,791 to 15,891:
+    Composites tested: 90
+    False positives found: 1
+    Error rate: 0.01111111
+    Examples: 15841
+
+  Range 1,000 to 5,000:
+    Composites tested: 3,500
+    False positives found: 1
+    Error rate: 0.00028571
+    Examples: 1729
+
+k = 5:
+  Total composites tested: 10,097
+  False positives found: 4
+  Overall error rate: 0.00039616
+
+  Ranges with false positives:
+
+  Range 1,679 to 1,779:
+    Composites tested: 89
+    False positives found: 1
+    Error rate: 0.01123596
+    Examples: 1729
+
+  Range 4,880 to 4,980:
+    Composites tested: 88
+    False positives found: 1
+    Error rate: 0.01136364
+    Examples: 4921
+
+  Range 1,000 to 5,000:
+    Composites tested: 3,500
+    False positives found: 2
+    Error rate: 0.00057143
+    Examples: 1125, 1729
+
+k = 10:
+  Total composites tested: 10,097
+  False positives found: 1
+  Overall error rate: 0.00009904
+
+  Ranges with false positives:
+
+  Range 1,000 to 5,000:
+    Composites tested: 3,500
+    False positives found: 1
+    Error rate: 0.00028571
+    Examples: 1729
+
+k = 15:
+  Total composites tested: 10,097
+  False positives found: 2
+  Overall error rate: 0.00019808
+
+  Ranges with false positives:
+
+  Range 6,551 to 6,651:
+    Composites tested: 90
+    False positives found: 1
+    Error rate: 0.01111111
+    Examples: 6561
+
+  Range 1,000 to 5,000:
+    Composites tested: 3,500
+    False positives found: 1
+    Error rate: 0.00028571
+    Examples: 1729
+
+k = 20:
+  Total composites tested: 10,097
+  False positives found: 1
+  Overall error rate: 0.00009904
+
+  Ranges with false positives:
+
+  Range 1,000 to 5,000:
+    Composites tested: 3,500
+    False positives found: 1
+    Error rate: 0.00028571
+    Examples: 1729
+
+================================================================================
+
+CARMICHAEL NUMBERS ANALYSIS
+----------------------------------------
+
+Number    k=1         k=2         k=3         k=4         k=5         k=10        k=15        k=20    
+------------------------------------------------------------------------------------------------------
+561         4.90%      9.10%      0.60%      0.00%      0.10%      0.00%      0.00%      0.00%
+1105        3.30%      5.40%      0.40%      0.00%      0.00%      0.00%      0.00%      0.00%
+1729       72.40%     94.40%     84.20%     74.80%     89.30%     76.40%     66.00%     59.60%
+2465       16.80%     30.60%      7.30%      1.50%      4.00%      0.00%      0.00%      0.00%
+2821        8.70%     15.60%      1.70%      0.20%      0.50%      0.00%      0.00%      0.00%
+6601       20.60%     35.90%     10.00%      3.20%      6.00%      0.10%      0.00%      0.00%
+8911       26.60%     41.10%     14.40%      5.00%      9.10%      0.30%      0.00%      0.00%
+10585      15.70%     27.40%      5.60%      1.90%      3.40%      0.00%      0.00%      0.00%
+15841      41.40%     65.70%     40.10%     23.90%     38.10%      8.00%      1.10%      0.40%
+29341       5.70%      8.50%      0.90%      0.10%      0.00%      0.00%      0.00%      0.00%
+41041       7.20%     13.80%      2.50%      0.20%      0.40%      0.00%      0.00%      0.00%
+46657      10.50%     22.30%      3.10%      0.60%      1.70%      0.00%      0.00%      0.00%
+52633      23.40%     39.20%     10.30%      3.20%      5.40%      0.10%      0.10%      0.00%
+62745       4.80%      9.10%      0.90%      0.00%      0.30%      0.00%      0.00%      0.00%
+63973       3.50%      6.10%      0.10%      0.00%      0.00%      0.00%      0.00%      0.00%
+75361      18.00%     36.60%      8.70%      2.00%      4.50%      0.10%      0.00%      0.00%
+
+================================================================================
+
+MOST SUCCESSFUL FALSE POSITIVES
+----------------------------------------
+
+k = 1:
+  Found 13 unique false positives
+  Top 10 examples: 1729, 1921, 2465, 2565, 2821, 2871, 3277, 3849, 3913, 9937
+
+k = 2:
+  Found 32 unique false positives
+  Top 10 examples: 537, 1023, 1105, 1125, 1281, 1369, 1547, 1685, 1707, 1729
+
+k = 3:
+  Found 4 unique false positives
+  Top 10 examples: 1729, 2145, 4681, 6561
+
+k = 4:
+  Found 2 unique false positives
+  Top 10 examples: 1729, 15841
+
+k = 5:
+  Found 3 unique false positives
+  Top 10 examples: 1125, 1729, 4921
+
+k = 10:
+  Found 1 unique false positives
+  Top 10 examples: 1729
+
+k = 15:
+  Found 2 unique false positives
+  Top 10 examples: 1729, 6561
+
+k = 20:
+  Found 1 unique false positives
+  Top 10 examples: 1729
+
+================================================================================
+
+Experiment completed successfully.
+Visualization plots have been saved:
+1. error_rate_vs_k.png - Error rate vs number of rounds
+2. false_positives_vs_k.png - False positives vs number of rounds
+3. carmichael_success_rate.png - Carmichael numbers success rates
