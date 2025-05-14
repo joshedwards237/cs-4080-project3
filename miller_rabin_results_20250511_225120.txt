@@ -1,0 +1,3339 @@
+================================================================================
+MILLER-RABIN PRIMALITY TEST EXPERIMENT RESULTS
+Generated on: 2025-05-11 22:51:20
+================================================================================
+
+EXPERIMENT PARAMETERS
+----------------------------------------
+k values tested: [1, 2, 3, 4, 5, 10]
+Number of Carmichael numbers tested: 33
+Total ranges tested: 162
+
+================================================================================
+
+OVERALL RESULTS BY NUMBER OF ROUNDS
+----------------------------------------
+
+k = 1:
+  Total composites tested: 42,660
+  False positives found: 1,566
+  Overall error rate: 0.03670886
+
+  Ranges with false positives:
+
+  Range 461 to 661:
+    Composites tested: 168
+    False positives found: 15
+    Error rate: 0.08928571
+    Examples: 481, 513, 579, 645, 615
+
+  Range 1,022 to 1,222:
+    Composites tested: 174
+    False positives found: 16
+    Error rate: 0.09195402
+    Examples: 1183, 1025, 1059, 1125, 1029
+
+  Range 1,583 to 1,783:
+    Composites tested: 174
+    False positives found: 20
+    Error rate: 0.11494253
+    Examples: 1683, 1685, 1687, 1689, 1695
+
+  Range 1,005 to 1,205:
+    Composites tested: 172
+    False positives found: 16
+    Error rate: 0.09302326
+    Examples: 1183, 1025, 1059, 1125, 1029
+
+  Range 2,110 to 2,310:
+    Composites tested: 175
+    False positives found: 10
+    Error rate: 0.05714286
+    Examples: 2145, 2307, 2217, 2187, 2283
+
+  Range 3,215 to 3,415:
+    Composites tested: 175
+    False positives found: 11
+    Error rate: 0.06285714
+    Examples: 3267, 3367, 3369, 3273, 3241
+
+  Range 1,629 to 1,829:
+    Composites tested: 178
+    False positives found: 22
+    Error rate: 0.12359551
+    Examples: 1803, 1683, 1685, 1687, 1689
+
+  Range 3,358 to 3,558:
+    Composites tested: 175
+    False positives found: 15
+    Error rate: 0.08571429
+    Examples: 3489, 3459, 3429, 3367, 3369
+
+  Range 5,087 to 5,287:
+    Composites tested: 179
+    False positives found: 14
+    Error rate: 0.07821229
+    Examples: 5185, 5187, 5091, 5285, 5097
+
+  Range 2,365 to 2,565:
+    Composites tested: 176
+    False positives found: 10
+    Error rate: 0.05681818
+    Examples: 2369, 2401, 2465, 2497, 2565
+
+  Range 4,830 to 5,030:
+    Composites tested: 176
+    False positives found: 13
+    Error rate: 0.07386364
+    Examples: 5025, 4961, 4965, 5001, 4905
+
+  Range 7,295 to 7,495:
+    Composites tested: 181
+    False positives found: 14
+    Error rate: 0.07734807
+    Examples: 7363, 7395, 7337, 7401, 7323
+
+  Range 2,721 to 2,921:
+    Composites tested: 176
+    False positives found: 14
+    Error rate: 0.07954545
+    Examples: 2849, 2881, 2913, 2721, 2885
+
+  Range 5,542 to 5,742:
+    Composites tested: 178
+    False positives found: 18
+    Error rate: 0.10112360
+    Examples: 5601, 5665, 5667, 5731, 5705
+
+  Range 8,363 to 8,563:
+    Composites tested: 180
+    False positives found: 13
+    Error rate: 0.07222222
+    Examples: 8385, 8481, 8449, 8421, 8457
+
+  Range 6,501 to 6,701:
+    Composites tested: 179
+    False positives found: 12
+    Error rate: 0.06703911
+    Examples: 6561, 6533, 6537, 6601, 6697
+
+  Range 13,102 to 13,302:
+    Composites tested: 180
+    False positives found: 6
+    Error rate: 0.03333333
+    Examples: 13125, 13189, 13285, 13227, 13165
+
+  Range 19,703 to 19,903:
+    Composites tested: 181
+    False positives found: 10
+    Error rate: 0.05524862
+    Examples: 19845, 19757, 19707, 19729, 19857
+
+  Range 8,811 to 9,011:
+    Composites tested: 178
+    False positives found: 11
+    Error rate: 0.06179775
+    Examples: 8905, 8907, 9003, 8911, 8913
+
+  Range 17,722 to 17,922:
+    Composites tested: 181
+    False positives found: 10
+    Error rate: 0.05524862
+    Examples: 17793, 17857, 17859, 17893, 17767
+
+  Range 26,633 to 26,833:
+    Composites tested: 177
+    False positives found: 9
+    Error rate: 0.05084746
+    Examples: 26785, 26817, 26787, 26825, 26667
+
+  Range 10,485 to 10,685:
+    Composites tested: 181
+    False positives found: 15
+    Error rate: 0.08287293
+    Examples: 10625, 10561, 10565, 10489, 10661
+
+  Range 21,070 to 21,270:
+    Composites tested: 182
+    False positives found: 13
+    Error rate: 0.07142857
+    Examples: 21155, 21125, 21223, 21127, 21097
+
+  Range 31,655 to 31,855:
+    Composites tested: 183
+    False positives found: 12
+    Error rate: 0.06557377
+    Examples: 31681, 31747, 31781, 31753, 31755
+
+  Range 15,741 to 15,941:
+    Composites tested: 179
+    False positives found: 11
+    Error rate: 0.06145251
+    Examples: 15841, 15777, 15843, 15799, 15751
+
+  Range 31,582 to 31,782:
+    Composites tested: 182
+    False positives found: 17
+    Error rate: 0.09340659
+    Examples: 31681, 31617, 31651, 31587, 31621
+
+  Range 47,423 to 47,623:
+    Composites tested: 182
+    False positives found: 14
+    Error rate: 0.07692308
+    Examples: 47489, 47617, 47587, 47427, 47461
+
+  Range 29,241 to 29,441:
+    Composites tested: 180
+    False positives found: 13
+    Error rate: 0.07222222
+    Examples: 29409, 29307, 29381, 29341, 29257
+
+  Range 58,582 to 58,782:
+    Composites tested: 184
+    False positives found: 11
+    Error rate: 0.05978261
+    Examples: 58593, 58689, 58659, 58597, 58761
+
+  Range 87,923 to 88,123:
+    Composites tested: 185
+    False positives found: 7
+    Error rate: 0.03783784
+    Examples: 88041, 88009, 88075, 88017, 88121
+
+  Range 40,941 to 41,141:
+    Composites tested: 184
+    False positives found: 13
+    Error rate: 0.07065217
+    Examples: 41091, 40965, 41125, 41003, 41067
+
+  Range 81,982 to 82,182:
+    Composites tested: 184
+    False positives found: 11
+    Error rate: 0.05978261
+    Examples: 82145, 81987, 82083, 82085, 82181
+
+  Range 123,023 to 123,223:
+    Composites tested: 186
+    False positives found: 15
+    Error rate: 0.08064516
+    Examples: 123201, 123171, 123139, 123205, 123175
+
+  Range 46,557 to 46,757:
+    Composites tested: 179
+    False positives found: 6
+    Error rate: 0.03351955
+    Examples: 46657, 46561, 46625, 46641, 46707
+
+  Range 93,214 to 93,414:
+    Composites tested: 182
+    False positives found: 8
+    Error rate: 0.04395604
+    Examples: 93273, 93409, 93321, 93353, 93391
+
+  Range 139,871 to 140,071:
+    Composites tested: 182
+    False positives found: 10
+    Error rate: 0.05494505
+    Examples: 139971, 139877, 140005, 139945, 140043
+
+  Range 52,533 to 52,733:
+    Composites tested: 180
+    False positives found: 5
+    Error rate: 0.02777778
+    Examples: 52707, 52617, 52555, 52565, 52633
+
+  Range 105,166 to 105,366:
+    Composites tested: 182
+    False positives found: 10
+    Error rate: 0.05494505
+    Examples: 105249, 105313, 105283, 105339, 105321
+
+  Range 157,799 to 157,999:
+    Composites tested: 184
+    False positives found: 7
+    Error rate: 0.03804348
+    Examples: 157881, 157827, 157899, 157807, 157873
+
+  Range 62,645 to 62,845:
+    Composites tested: 186
+    False positives found: 10
+    Error rate: 0.05376344
+    Examples: 62817, 62787, 62755, 62693, 62691
+
+  Range 125,390 to 125,590:
+    Composites tested: 188
+    False positives found: 9
+    Error rate: 0.04787234
+    Examples: 125569, 125483, 125401, 125485, 125529
+
+  Range 188,135 to 188,335:
+    Composites tested: 182
+    False positives found: 10
+    Error rate: 0.05494505
+    Examples: 188193, 188259, 188165, 188169, 188235
+
+  Range 63,873 to 64,073:
+    Composites tested: 187
+    False positives found: 7
+    Error rate: 0.03743316
+    Examples: 63969, 63939, 63973, 64041, 64045
+
+  Range 127,846 to 128,046:
+    Composites tested: 187
+    False positives found: 7
+    Error rate: 0.03743316
+    Examples: 128005, 128041, 127947, 127885, 127923
+
+  Range 191,819 to 192,019:
+    Composites tested: 186
+    False positives found: 6
+    Error rate: 0.03225806
+    Examples: 192001, 191981, 191921, 191959, 191931
+
+  Range 75,261 to 75,461:
+    Composites tested: 183
+    False positives found: 9
+    Error rate: 0.04918033
+    Examples: 75361, 75363, 75459, 75365, 75343
+
+  Range 150,622 to 150,822:
+    Composites tested: 190
+    False positives found: 6
+    Error rate: 0.03157895
+    Examples: 150785, 150787, 150691, 150819, 150805
+
+  Range 225,983 to 226,183:
+    Composites tested: 185
+    False positives found: 11
+    Error rate: 0.05945946
+    Examples: 226081, 226177, 226051, 226049, 226083
+
+  Range 101,001 to 101,201:
+    Composites tested: 182
+    False positives found: 6
+    Error rate: 0.03296703
+    Examples: 101025, 101163, 101101, 101005, 101139
+
+  Range 202,102 to 202,302:
+    Composites tested: 188
+    False positives found: 10
+    Error rate: 0.05319149
+    Examples: 202177, 202241, 202299, 202249, 202281
+
+  Range 303,203 to 303,403:
+    Composites tested: 183
+    False positives found: 11
+    Error rate: 0.06010929
+    Examples: 303393, 303265, 303267, 303241, 303339
+
+  Range 115,821 to 116,021:
+    Composites tested: 180
+    False positives found: 8
+    Error rate: 0.04444444
+    Examples: 116003, 115897, 115911, 115921, 115953
+
+  Range 231,742 to 231,942:
+    Composites tested: 186
+    False positives found: 5
+    Error rate: 0.02688172
+    Examples: 231873, 231747, 231849, 231793, 231801
+
+  Range 347,663 to 347,863:
+    Composites tested: 187
+    False positives found: 8
+    Error rate: 0.04278075
+    Examples: 347777, 347781, 347721, 347851, 347761
+
+  Range 126,117 to 126,317:
+    Composites tested: 184
+    False positives found: 9
+    Error rate: 0.04891304
+    Examples: 126181, 126217, 126249, 126219, 126251
+
+  Range 252,334 to 252,534:
+    Composites tested: 186
+    False positives found: 6
+    Error rate: 0.03225806
+    Examples: 252485, 252393, 252489, 252361, 252363
+
+  Range 378,551 to 378,751:
+    Composites tested: 184
+    False positives found: 7
+    Error rate: 0.03804348
+    Examples: 378625, 378721, 378723, 378633, 378699
+
+  Range 162,301 to 162,501:
+    Composites tested: 189
+    False positives found: 8
+    Error rate: 0.04232804
+    Examples: 162401, 162345, 162361, 162417, 162483
+
+  Range 324,702 to 324,902:
+    Composites tested: 183
+    False positives found: 4
+    Error rate: 0.02185792
+    Examples: 324801, 324867, 324845, 324767
+
+  Range 487,103 to 487,303:
+    Composites tested: 189
+    False positives found: 3
+    Error rate: 0.01587302
+    Examples: 487257, 487203, 487189
+
+  Range 171,981 to 172,181:
+    Composites tested: 184
+    False positives found: 6
+    Error rate: 0.03260870
+    Examples: 172041, 172173, 172081, 171987, 171993
+
+  Range 344,062 to 344,262:
+    Composites tested: 181
+    False positives found: 6
+    Error rate: 0.03314917
+    Examples: 344067, 344101, 344071, 344073, 344139
+
+  Range 516,143 to 516,343:
+    Composites tested: 181
+    False positives found: 4
+    Error rate: 0.02209945
+    Examples: 516201, 516225, 516187, 516243
+
+  Range 188,361 to 188,561:
+    Composites tested: 186
+    False positives found: 7
+    Error rate: 0.03763441
+    Examples: 188551, 188457, 188553, 188395, 188461
+
+  Range 376,822 to 377,022:
+    Composites tested: 184
+    False positives found: 7
+    Error rate: 0.03804348
+    Examples: 376993, 377005, 376977, 376881, 376851
+
+  Range 565,283 to 565,483:
+    Composites tested: 181
+    False positives found: 6
+    Error rate: 0.03314917
+    Examples: 565377, 565473, 565321, 565449, 565329
+
+  Range 252,501 to 252,701:
+    Composites tested: 189
+    False positives found: 7
+    Error rate: 0.03703704
+    Examples: 252681, 252587, 252591, 252537, 252633
+
+  Range 505,102 to 505,302:
+    Composites tested: 184
+    False positives found: 6
+    Error rate: 0.03260870
+    Examples: 505225, 505227, 505197, 505171, 505299
+
+  Range 757,703 to 757,903:
+    Composites tested: 188
+    False positives found: 3
+    Error rate: 0.01595745
+    Examples: 757833, 757873, 757721
+
+  Range 278,445 to 278,645:
+    Composites tested: 181
+    False positives found: 6
+    Error rate: 0.03314917
+    Examples: 278601, 278571, 278605, 278545, 278547
+
+  Range 556,990 to 557,190:
+    Composites tested: 188
+    False positives found: 6
+    Error rate: 0.03191489
+    Examples: 557097, 557169, 557137, 557173, 557049
+
+  Range 835,535 to 835,735:
+    Composites tested: 186
+    False positives found: 5
+    Error rate: 0.02688172
+    Examples: 835683, 835689, 835565, 835635, 835577
+
+  Range 294,309 to 294,509:
+    Composites tested: 182
+    False positives found: 4
+    Error rate: 0.02197802
+    Examples: 294409, 294387, 294485, 294369
+
+  Range 588,718 to 588,918:
+    Composites tested: 187
+    False positives found: 2
+    Error rate: 0.01069519
+    Examples: 588745, 588901
+
+  Range 883,127 to 883,327:
+    Composites tested: 186
+    False positives found: 4
+    Error rate: 0.02150538
+    Examples: 883201, 883227, 883153, 883297
+
+  Range 314,721 to 314,921:
+    Composites tested: 188
+    False positives found: 7
+    Error rate: 0.03723404
+    Examples: 314721, 314913, 314785, 314821, 314859
+
+  Range 629,542 to 629,742:
+    Composites tested: 185
+    False positives found: 3
+    Error rate: 0.01621622
+    Examples: 629553, 629641, 629571
+
+  Range 944,363 to 944,563:
+    Composites tested: 180
+    False positives found: 1
+    Error rate: 0.00555556
+    Examples: 944441
+
+  Range 334,053 to 334,253:
+    Composites tested: 187
+    False positives found: 6
+    Error rate: 0.03208556
+    Examples: 334085, 334153, 334125, 334227, 334201
+
+  Range 668,206 to 668,406:
+    Composites tested: 195
+    False positives found: 5
+    Error rate: 0.02564103
+    Examples: 668263, 668361, 668365, 668337, 668379
+
+  Range 1,002,359 to 1,002,559:
+    Composites tested: 183
+    False positives found: 6
+    Error rate: 0.03278689
+    Examples: 1002401, 1002531, 1002373, 1002375, 1002513
+
+  Range 340,461 to 340,661:
+    Composites tested: 184
+    False positives found: 6
+    Error rate: 0.03260870
+    Examples: 340611, 340617, 340491, 340561, 340625
+
+  Range 681,022 to 681,222:
+    Composites tested: 187
+    False positives found: 4
+    Error rate: 0.02139037
+    Examples: 681081, 681033, 681085, 681073
+
+  Range 1,021,583 to 1,021,783:
+    Composites tested: 189
+    False positives found: 4
+    Error rate: 0.02116402
+    Examples: 1021683, 1021731, 1021645, 1021735
+
+  Range 398,901 to 399,101:
+    Composites tested: 184
+    False positives found: 4
+    Error rate: 0.02173913
+    Examples: 398913, 399001, 398945, 398905
+
+  Range 797,902 to 798,102:
+    Composites tested: 185
+    False positives found: 6
+    Error rate: 0.03243243
+    Examples: 798081, 798027, 798001, 797905, 797971
+
+  Range 1,196,903 to 1,197,103:
+    Composites tested: 186
+    False positives found: 3
+    Error rate: 0.01612903
+    Examples: 1196921, 1196931, 1197085
+
+  Range 409,941 to 410,141:
+    Composites tested: 186
+    False positives found: 6
+    Error rate: 0.03225806
+    Examples: 410073, 409971, 410041, 409947, 409981
+
+  Range 819,982 to 820,182:
+    Composites tested: 188
+    False positives found: 5
+    Error rate: 0.02659574
+    Examples: 820105, 820081, 820121, 820125, 820089
+
+  Range 1,230,023 to 1,230,223:
+    Composites tested: 190
+    False positives found: 4
+    Error rate: 0.02105263
+    Examples: 1230121, 1230027, 1230085, 1230123
+
+  Range 448,965 to 449,165:
+    Composites tested: 184
+    False positives found: 3
+    Error rate: 0.01630435
+    Examples: 449065, 449067, 449045
+
+  Range 898,030 to 898,230:
+    Composites tested: 183
+    False positives found: 5
+    Error rate: 0.02732240
+    Examples: 898113, 898179, 898089, 898225, 898039
+
+  Range 1,347,095 to 1,347,295:
+    Composites tested: 187
+    False positives found: 7
+    Error rate: 0.03743316
+    Examples: 1347205, 1347153, 1347217, 1347249, 1347157
+
+  Range 488,781 to 488,981:
+    Composites tested: 187
+    False positives found: 4
+    Error rate: 0.02139037
+    Examples: 488881, 488841, 488889, 488913
+
+  Range 977,662 to 977,862:
+    Composites tested: 187
+    False positives found: 5
+    Error rate: 0.02673797
+    Examples: 977763, 977667, 977673, 977783, 977817
+
+  Range 1,466,543 to 1,466,743:
+    Composites tested: 186
+    False positives found: 4
+    Error rate: 0.02150538
+    Examples: 1466643, 1466569, 1466683, 1466667
+
+  Range 512,361 to 512,561:
+    Composites tested: 189
+    False positives found: 11
+    Error rate: 0.05820106
+    Examples: 512481, 512361, 512425, 512553, 512473
+
+  Range 1,024,822 to 1,025,022:
+    Composites tested: 183
+    False positives found: 3
+    Error rate: 0.01639344
+    Examples: 1024993, 1024897, 1024977
+
+  Range 1,537,283 to 1,537,483:
+    Composites tested: 186
+    False positives found: 6
+    Error rate: 0.03225806
+    Examples: 1537381, 1537321, 1537481, 1537329, 1537305
+
+  Range 619,705 to 620,105:
+    Composites tested: 373
+    False positives found: 11
+    Error rate: 0.02949062
+    Examples: 620065, 619809, 620097, 620101, 620005
+
+  Range 969,769 to 970,169:
+    Composites tested: 373
+    False positives found: 7
+    Error rate: 0.01876676
+    Examples: 970113, 970145, 969961, 969965, 970131
+
+  Range 1,382,665 to 1,383,065:
+    Composites tested: 380
+    False positives found: 12
+    Error rate: 0.03157895
+    Examples: 1382721, 1382951, 1383053, 1382937, 1383033
+
+  Range 1,582,381 to 1,582,781:
+    Composites tested: 373
+    False positives found: 4
+    Error rate: 0.01072386
+    Examples: 1582593, 1582467, 1582631, 1582689
+
+  Range 3,702,961 to 3,703,361:
+    Composites tested: 373
+    False positives found: 2
+    Error rate: 0.00536193
+    Examples: 3703297, 3703179
+
+  Range 4,998,871 to 4,999,271:
+    Composites tested: 375
+    False positives found: 6
+    Error rate: 0.01600000
+    Examples: 4998953, 4999017, 4998891, 4999083, 4998963
+
+  Range 5,937,985 to 5,938,385:
+    Composites tested: 368
+    False positives found: 4
+    Error rate: 0.01086957
+    Examples: 5938161, 5938049, 5938113, 5938141
+
+  Range 1,910,345 to 1,910,745:
+    Composites tested: 376
+    False positives found: 10
+    Error rate: 0.02659574
+    Examples: 1910371, 1910461, 1910665, 1910481, 1910641
+
+  Range 2,723,625 to 2,724,025:
+    Composites tested: 370
+    False positives found: 3
+    Error rate: 0.00810811
+    Examples: 2723673, 2723907, 2723983
+
+  Range 3,117,005 to 3,117,405:
+    Composites tested: 378
+    False positives found: 5
+    Error rate: 0.01322751
+    Examples: 3117313, 3117379, 3117129, 3117201, 3117175
+
+  Range 7,293,905 to 7,294,305:
+    Composites tested: 377
+    False positives found: 2
+    Error rate: 0.00530504
+    Examples: 7294299, 7294205
+
+  Range 9,846,455 to 9,846,855:
+    Composites tested: 371
+    False positives found: 4
+    Error rate: 0.01078167
+    Examples: 9846609, 9846849, 9846489, 9846633
+
+  Range 11,696,225 to 11,696,625:
+    Composites tested: 372
+    False positives found: 3
+    Error rate: 0.00806452
+    Examples: 11696257, 11696241, 11696401
+
+  Range 4,261,785 to 4,262,185:
+    Composites tested: 371
+    False positives found: 4
+    Error rate: 0.01078167
+    Examples: 4262001, 4261809, 4261899, 4262129
+
+  Range 4,877,309 to 4,877,709:
+    Composites tested: 377
+    False positives found: 3
+    Error rate: 0.00795756
+    Examples: 4877641, 4877473, 4877601
+
+  Range 11,412,929 to 11,413,329:
+    Composites tested: 379
+    False positives found: 4
+    Error rate: 0.01055409
+    Examples: 11413257, 11413011, 11413325, 11413183
+
+  Range 15,406,919 to 15,407,319:
+    Composites tested: 372
+    False positives found: 3
+    Error rate: 0.00806452
+    Examples: 15407193, 15407211, 15407165
+
+  Range 18,301,265 to 18,301,665:
+    Composites tested: 378
+    False positives found: 4
+    Error rate: 0.01058201
+    Examples: 18301465, 18301467, 18301405, 18301449
+
+  Range 6,953,565 to 6,953,965:
+    Composites tested: 368
+    False positives found: 4
+    Error rate: 0.01086957
+    Examples: 6953937, 6953769, 6953701, 6953927
+
+  Range 16,271,265 to 16,271,665:
+    Composites tested: 376
+    False positives found: 3
+    Error rate: 0.00797872
+    Examples: 16271465, 16271571, 16271313
+
+  Range 18,621,221 to 18,621,621:
+    Composites tested: 372
+    False positives found: 2
+    Error rate: 0.00537634
+    Examples: 18621489, 18621417
+
+  Range 29,860,085 to 29,860,485:
+    Composites tested: 380
+    False positives found: 1
+    Error rate: 0.00263158
+    Examples: 29860277
+
+  Range 58,821,311 to 58,821,711:
+    Composites tested: 381
+    False positives found: 3
+    Error rate: 0.00787402
+    Examples: 58821691, 58821509, 58821511
+
+  Range 69,871,385 to 69,871,785:
+    Composites tested: 372
+    False positives found: 3
+    Error rate: 0.00806452
+    Examples: 69871587, 69871741, 69871583
+
+  Range 94,322,735 to 94,323,135:
+    Composites tested: 379
+    False positives found: 1
+    Error rate: 0.00263852
+    Examples: 94322883
+
+  Range 1,000 to 5,000:
+    Composites tested: 3,500
+    False positives found: 290
+    Error rate: 0.08285714
+    Examples: 4097, 2049, 3585, 1025, 1541
+
+  Range 9,900 to 10,100:
+    Composites tested: 181
+    False positives found: 11
+    Error rate: 0.06077348
+    Examples: 10081, 10083, 9987, 10021, 9993
+
+  Range 29,340 to 29,342:
+    Composites tested: 3
+    False positives found: 1
+    Error rate: 0.33333333
+    Examples: 29341
+
+  Range 50,000 to 51,000:
+    Composites tested: 912
+    False positives found: 52
+    Error rate: 0.05701754
+    Examples: 50561, 50187, 50045, 50041, 50961
+
+  Range 99,000 to 100,000:
+    Composites tested: 914
+    False positives found: 35
+    Error rate: 0.03829322
+    Examples: 99201, 99459, 99205, 99207, 99219
+
+  Range 619,905 to 620,905:
+    Composites tested: 925
+    False positives found: 20
+    Error rate: 0.02162162
+    Examples: 620417, 620289, 620817, 620691, 619923
+
+  Range 1,000,000 to 1,001,000:
+    Composites tested: 926
+    False positives found: 22
+    Error rate: 0.02375810
+    Examples: 1000705, 1000711, 1000729, 1000473, 1000347
+
+  Range 10,000,000 to 10,001,000:
+    Composites tested: 940
+    False positives found: 8
+    Error rate: 0.00851064
+    Examples: 10000705, 10000897, 10000803, 10000165, 10000565
+
+  Range 100,000,000 to 100,001,000:
+    Composites tested: 947
+    False positives found: 2
+    Error rate: 0.00211193
+    Examples: 100000041, 100000209
+
+  Range 924 to 1,124:
+    Composites tested: 170
+    False positives found: 16
+    Error rate: 0.09411765
+    Examples: 993, 1025, 1059, 1029, 935
+
+  Range 1,948 to 2,148:
+    Composites tested: 172
+    False positives found: 19
+    Error rate: 0.11046512
+    Examples: 2049, 2059, 2071, 2073, 2077
+
+  Range 3,996 to 4,196:
+    Composites tested: 177
+    False positives found: 11
+    Error rate: 0.06214689
+    Examples: 4033, 4097, 4161, 4131, 4005
+
+  Range 8,092 to 8,292:
+    Composites tested: 178
+    False positives found: 15
+    Error rate: 0.08426966
+    Examples: 8193, 8097, 8259, 8261, 8187
+
+  Range 16,284 to 16,484:
+    Composites tested: 182
+    False positives found: 11
+    Error rate: 0.06043956
+    Examples: 16385, 16323, 16291, 16297, 16329
+
+  Range 32,668 to 32,868:
+    Composites tested: 183
+    False positives found: 13
+    Error rate: 0.07103825
+    Examples: 32705, 32865, 32769, 32673, 32805
+
+  Range 65,436 to 65,636:
+    Composites tested: 180
+    False positives found: 12
+    Error rate: 0.06666667
+    Examples: 65569, 65473, 65605, 65541, 65577
+
+  Range 130,972 to 131,172:
+    Composites tested: 184
+    False positives found: 10
+    Error rate: 0.05434783
+    Examples: 131073, 130977, 131105, 131045, 131145
+
+  Range 262,044 to 262,244:
+    Composites tested: 182
+    False positives found: 4
+    Error rate: 0.02197802
+    Examples: 262209, 262145, 262061, 262143
+
+  Range 524,188 to 524,388:
+    Composites tested: 182
+    False positives found: 4
+    Error rate: 0.02197802
+    Examples: 524289, 524283, 524211, 524239
+
+  Range 1,048,476 to 1,048,676:
+    Composites tested: 187
+    False positives found: 6
+    Error rate: 0.03208556
+    Examples: 1048577, 1048587, 1048591, 1048659, 1048477
+
+  Range 2,097,052 to 2,097,252:
+    Composites tested: 191
+    False positives found: 4
+    Error rate: 0.02094241
+    Examples: 2097177, 2097245, 2097061, 2097153
+
+  Range 4,194,204 to 4,194,404:
+    Composites tested: 188
+    False positives found: 3
+    Error rate: 0.01595745
+    Examples: 4194321, 4194249, 4194303
+
+  Range 8,388,508 to 8,388,708:
+    Composites tested: 187
+    False positives found: 4
+    Error rate: 0.02139037
+    Examples: 8388609, 8388601, 8388703, 8388607
+
+  Range 16,777,116 to 16,777,316:
+    Composites tested: 190
+    False positives found: 1
+    Error rate: 0.00526316
+    Examples: 16777217
+
+  Range 33,554,332 to 33,554,532:
+    Composites tested: 189
+    False positives found: 1
+    Error rate: 0.00529101
+    Examples: 33554431
+
+  Range 134,217,628 to 134,217,828:
+    Composites tested: 191
+    False positives found: 1
+    Error rate: 0.00523560
+    Examples: 134217777
+
+  Range 268,435,356 to 268,435,556:
+    Composites tested: 193
+    False positives found: 1
+    Error rate: 0.00518135
+    Examples: 268435455
+
+  Range 536,870,812 to 536,871,012:
+    Composites tested: 190
+    False positives found: 1
+    Error rate: 0.00526316
+    Examples: 536870911
+
+  Range 900 to 1,100:
+    Composites tested: 171
+    False positives found: 16
+    Error rate: 0.09356725
+    Examples: 993, 1025, 1059, 1029, 935
+
+  Range 9,900 to 10,100:
+    Composites tested: 181
+    False positives found: 11
+    Error rate: 0.06077348
+    Examples: 10081, 9987, 10083, 10021, 9993
+
+  Range 99,900 to 100,100:
+    Composites tested: 187
+    False positives found: 11
+    Error rate: 0.05882353
+    Examples: 100001, 99937, 99905, 100009, 100041
+
+  Range 999,900 to 1,000,100:
+    Composites tested: 187
+    False positives found: 6
+    Error rate: 0.03208556
+    Examples: 1000001, 999937, 999969, 1000011, 999993
+
+  Range 99,999,900 to 100,000,100:
+    Composites tested: 190
+    False positives found: 2
+    Error rate: 0.01052632
+    Examples: 100000057, 100000001
+
+k = 2:
+  Total composites tested: 42,660
+  False positives found: 1,702
+  Overall error rate: 0.03989686
+
+  Ranges with false positives:
+
+  Range 461 to 661:
+    Composites tested: 168
+    False positives found: 15
+    Error rate: 0.08928571
+    Examples: 481, 513, 579, 645, 615
+
+  Range 1,022 to 1,222:
+    Composites tested: 174
+    False positives found: 16
+    Error rate: 0.09195402
+    Examples: 1183, 1025, 1059, 1029, 1125
+
+  Range 1,583 to 1,783:
+    Composites tested: 174
+    False positives found: 20
+    Error rate: 0.11494253
+    Examples: 1683, 1685, 1687, 1689, 1695
+
+  Range 1,005 to 1,205:
+    Composites tested: 172
+    False positives found: 16
+    Error rate: 0.09302326
+    Examples: 1025, 1059, 1125, 1029, 1065
+
+  Range 2,110 to 2,310:
+    Composites tested: 175
+    False positives found: 10
+    Error rate: 0.05714286
+    Examples: 2145, 2307, 2217, 2283, 2187
+
+  Range 3,215 to 3,415:
+    Composites tested: 175
+    False positives found: 11
+    Error rate: 0.06285714
+    Examples: 3267, 3367, 3273, 3369, 3241
+
+  Range 1,629 to 1,829:
+    Composites tested: 178
+    False positives found: 22
+    Error rate: 0.12359551
+    Examples: 1803, 1683, 1685, 1687, 1689
+
+  Range 3,358 to 3,558:
+    Composites tested: 175
+    False positives found: 15
+    Error rate: 0.08571429
+    Examples: 3489, 3459, 3429, 3367, 3369
+
+  Range 5,087 to 5,287:
+    Composites tested: 179
+    False positives found: 14
+    Error rate: 0.07821229
+    Examples: 5185, 5187, 5091, 5285, 5161
+
+  Range 2,365 to 2,565:
+    Composites tested: 176
+    False positives found: 10
+    Error rate: 0.05681818
+    Examples: 2401, 2561, 2497, 2465, 2369
+
+  Range 4,830 to 5,030:
+    Composites tested: 176
+    False positives found: 13
+    Error rate: 0.07386364
+    Examples: 4961, 5025, 4965, 4905, 5001
+
+  Range 7,295 to 7,495:
+    Composites tested: 181
+    False positives found: 14
+    Error rate: 0.07734807
+    Examples: 7363, 7395, 7421, 7401, 7337
+
+  Range 2,721 to 2,921:
+    Composites tested: 176
+    False positives found: 14
+    Error rate: 0.07954545
+    Examples: 2881, 2849, 2787, 2913, 2821
+
+  Range 5,542 to 5,742:
+    Composites tested: 178
+    False positives found: 18
+    Error rate: 0.10112360
+    Examples: 5665, 5601, 5731, 5667, 5705
+
+  Range 8,363 to 8,563:
+    Composites tested: 180
+    False positives found: 13
+    Error rate: 0.07222222
+    Examples: 8449, 8385, 8481, 8421, 8553
+
+  Range 6,501 to 6,701:
+    Composites tested: 179
+    False positives found: 12
+    Error rate: 0.06703911
+    Examples: 6561, 6533, 6601, 6697, 6591
+
+  Range 13,102 to 13,302:
+    Composites tested: 180
+    False positives found: 6
+    Error rate: 0.03333333
+    Examples: 13189, 13125, 13285, 13227, 13165
+
+  Range 19,703 to 19,903:
+    Composites tested: 181
+    False positives found: 10
+    Error rate: 0.05524862
+    Examples: 19845, 19757, 19707, 19729, 19825
+
+  Range 8,811 to 9,011:
+    Composites tested: 178
+    False positives found: 11
+    Error rate: 0.06179775
+    Examples: 8905, 8907, 9003, 8911, 8817
+
+  Range 17,722 to 17,922:
+    Composites tested: 181
+    False positives found: 10
+    Error rate: 0.05524862
+    Examples: 17857, 17793, 17859, 17893, 17767
+
+  Range 26,633 to 26,833:
+    Composites tested: 177
+    False positives found: 9
+    Error rate: 0.05084746
+    Examples: 26785, 26817, 26787, 26825, 26667
+
+  Range 10,485 to 10,685:
+    Composites tested: 181
+    False positives found: 15
+    Error rate: 0.08287293
+    Examples: 10625, 10561, 10661, 10565, 10489
+
+  Range 21,070 to 21,270:
+    Composites tested: 182
+    False positives found: 13
+    Error rate: 0.07142857
+    Examples: 21155, 21125, 21223, 21127, 21129
+
+  Range 31,655 to 31,855:
+    Composites tested: 183
+    False positives found: 12
+    Error rate: 0.06557377
+    Examples: 31681, 31747, 31781, 31753, 31755
+
+  Range 15,741 to 15,941:
+    Composites tested: 179
+    False positives found: 11
+    Error rate: 0.06145251
+    Examples: 15841, 15777, 15843, 15799, 15751
+
+  Range 31,582 to 31,782:
+    Composites tested: 182
+    False positives found: 17
+    Error rate: 0.09340659
+    Examples: 31681, 31617, 31651, 31747, 31621
+
+  Range 47,423 to 47,623:
+    Composites tested: 182
+    False positives found: 14
+    Error rate: 0.07692308
+    Examples: 47489, 47617, 47587, 47523, 47461
+
+  Range 29,241 to 29,441:
+    Composites tested: 180
+    False positives found: 13
+    Error rate: 0.07222222
+    Examples: 29409, 29245, 29307, 29381, 29257
+
+  Range 58,582 to 58,782:
+    Composites tested: 184
+    False positives found: 11
+    Error rate: 0.05978261
+    Examples: 58689, 58593, 58659, 58597, 58713
+
+  Range 87,923 to 88,123:
+    Composites tested: 185
+    False positives found: 7
+    Error rate: 0.03783784
+    Examples: 88041, 88009, 88075, 88017, 88121
+
+  Range 40,941 to 41,141:
+    Composites tested: 184
+    False positives found: 14
+    Error rate: 0.07608696
+    Examples: 41091, 40965, 41125, 41067, 41003
+
+  Range 81,982 to 82,182:
+    Composites tested: 184
+    False positives found: 11
+    Error rate: 0.05978261
+    Examples: 82145, 82083, 81987, 82085, 82181
+
+  Range 123,023 to 123,223:
+    Composites tested: 186
+    False positives found: 15
+    Error rate: 0.08064516
+    Examples: 123201, 123171, 123139, 123205, 123175
+
+  Range 46,557 to 46,757:
+    Composites tested: 179
+    False positives found: 6
+    Error rate: 0.03351955
+    Examples: 46657, 46625, 46561, 46641, 46707
+
+  Range 93,214 to 93,414:
+    Composites tested: 182
+    False positives found: 8
+    Error rate: 0.04395604
+    Examples: 93409, 93369, 93321, 93353, 93391
+
+  Range 139,871 to 140,071:
+    Composites tested: 182
+    False positives found: 11
+    Error rate: 0.06043956
+    Examples: 140033, 139971, 139877, 140005, 139945
+
+  Range 52,533 to 52,733:
+    Composites tested: 180
+    False positives found: 5
+    Error rate: 0.02777778
+    Examples: 52707, 52617, 52555, 52565, 52633
+
+  Range 105,166 to 105,366:
+    Composites tested: 182
+    False positives found: 10
+    Error rate: 0.05494505
+    Examples: 105249, 105313, 105283, 105339, 105321
+
+  Range 157,799 to 157,999:
+    Composites tested: 184
+    False positives found: 7
+    Error rate: 0.03804348
+    Examples: 157827, 157913, 157899, 157807, 157873
+
+  Range 62,645 to 62,845:
+    Composites tested: 186
+    False positives found: 10
+    Error rate: 0.05376344
+    Examples: 62817, 62755, 62691, 62693, 62787
+
+  Range 125,390 to 125,590:
+    Composites tested: 188
+    False positives found: 11
+    Error rate: 0.05851064
+    Examples: 125569, 125483, 125547, 125485, 125529
+
+  Range 188,135 to 188,335:
+    Composites tested: 182
+    False positives found: 10
+    Error rate: 0.05494505
+    Examples: 188193, 188259, 188165, 188169, 188235
+
+  Range 63,873 to 64,073:
+    Composites tested: 187
+    False positives found: 8
+    Error rate: 0.04278075
+    Examples: 63969, 63939, 63973, 64005, 64041
+
+  Range 127,846 to 128,046:
+    Composites tested: 187
+    False positives found: 7
+    Error rate: 0.03743316
+    Examples: 128005, 128041, 127947, 127885, 127923
+
+  Range 191,819 to 192,019:
+    Composites tested: 186
+    False positives found: 6
+    Error rate: 0.03225806
+    Examples: 192001, 192011, 191981, 191921, 191959
+
+  Range 75,261 to 75,461:
+    Composites tested: 183
+    False positives found: 9
+    Error rate: 0.04918033
+    Examples: 75361, 75363, 75459, 75365, 75343
+
+  Range 150,622 to 150,822:
+    Composites tested: 190
+    False positives found: 5
+    Error rate: 0.02631579
+    Examples: 150785, 150787, 150691, 150805, 150681
+
+  Range 225,983 to 226,183:
+    Composites tested: 185
+    False positives found: 12
+    Error rate: 0.06486486
+    Examples: 226081, 226049, 226051, 226083, 225987
+
+  Range 101,001 to 101,201:
+    Composites tested: 182
+    False positives found: 7
+    Error rate: 0.03846154
+    Examples: 101025, 101163, 101101, 101005, 101165
+
+  Range 202,102 to 202,302:
+    Composites tested: 188
+    False positives found: 11
+    Error rate: 0.05851064
+    Examples: 202241, 202177, 202299, 202273, 202249
+
+  Range 303,203 to 303,403:
+    Composites tested: 183
+    False positives found: 11
+    Error rate: 0.06010929
+    Examples: 303393, 303265, 303267, 303241, 303211
+
+  Range 115,821 to 116,021:
+    Composites tested: 180
+    False positives found: 8
+    Error rate: 0.04444444
+    Examples: 116003, 115897, 115911, 115953, 115921
+
+  Range 231,742 to 231,942:
+    Composites tested: 186
+    False positives found: 6
+    Error rate: 0.03225806
+    Examples: 231873, 231747, 231849, 231761, 231793
+
+  Range 347,663 to 347,863:
+    Composites tested: 187
+    False positives found: 10
+    Error rate: 0.05347594
+    Examples: 347777, 347781, 347721, 347851, 347705
+
+  Range 126,117 to 126,317:
+    Composites tested: 184
+    False positives found: 9
+    Error rate: 0.04891304
+    Examples: 126181, 126217, 126249, 126219, 126153
+
+  Range 252,334 to 252,534:
+    Composites tested: 186
+    False positives found: 6
+    Error rate: 0.03225806
+    Examples: 252485, 252489, 252393, 252361, 252363
+
+  Range 378,551 to 378,751:
+    Composites tested: 184
+    False positives found: 8
+    Error rate: 0.04347826
+    Examples: 378625, 378721, 378723, 378633, 378699
+
+  Range 162,301 to 162,501:
+    Composites tested: 189
+    False positives found: 8
+    Error rate: 0.04232804
+    Examples: 162401, 162345, 162361, 162417, 162483
+
+  Range 324,702 to 324,902:
+    Composites tested: 183
+    False positives found: 4
+    Error rate: 0.02185792
+    Examples: 324801, 324867, 324845, 324767
+
+  Range 487,103 to 487,303:
+    Composites tested: 189
+    False positives found: 2
+    Error rate: 0.01058201
+    Examples: 487257, 487203
+
+  Range 171,981 to 172,181:
+    Composites tested: 184
+    False positives found: 7
+    Error rate: 0.03804348
+    Examples: 172041, 172173, 172081, 171987, 172125
+
+  Range 344,062 to 344,262:
+    Composites tested: 181
+    False positives found: 6
+    Error rate: 0.03314917
+    Examples: 344067, 344101, 344071, 344073, 344139
+
+  Range 516,143 to 516,343:
+    Composites tested: 181
+    False positives found: 8
+    Error rate: 0.04419890
+    Examples: 516225, 516291, 516201, 516241, 516243
+
+  Range 188,361 to 188,561:
+    Composites tested: 186
+    False positives found: 8
+    Error rate: 0.04301075
+    Examples: 188481, 188551, 188457, 188553, 188395
+
+  Range 376,822 to 377,022:
+    Composites tested: 184
+    False positives found: 7
+    Error rate: 0.03804348
+    Examples: 376993, 377005, 376977, 376881, 376851
+
+  Range 565,283 to 565,483:
+    Composites tested: 181
+    False positives found: 10
+    Error rate: 0.05524862
+    Examples: 565345, 565473, 565377, 565449, 565321
+
+  Range 252,501 to 252,701:
+    Composites tested: 189
+    False positives found: 7
+    Error rate: 0.03703704
+    Examples: 252681, 252587, 252591, 252537, 252633
+
+  Range 505,102 to 505,302:
+    Composites tested: 184
+    False positives found: 6
+    Error rate: 0.03260870
+    Examples: 505225, 505227, 505197, 505171, 505299
+
+  Range 757,703 to 757,903:
+    Composites tested: 188
+    False positives found: 6
+    Error rate: 0.03191489
+    Examples: 757765, 757833, 757803, 757873, 757721
+
+  Range 278,445 to 278,645:
+    Composites tested: 181
+    False positives found: 6
+    Error rate: 0.03314917
+    Examples: 278601, 278571, 278605, 278545, 278547
+
+  Range 556,990 to 557,190:
+    Composites tested: 188
+    False positives found: 9
+    Error rate: 0.04787234
+    Examples: 557121, 557097, 557137, 557169, 557043
+
+  Range 835,535 to 835,735:
+    Composites tested: 186
+    False positives found: 4
+    Error rate: 0.02150538
+    Examples: 835689, 835683, 835565, 835635
+
+  Range 294,309 to 294,509:
+    Composites tested: 182
+    False positives found: 4
+    Error rate: 0.02197802
+    Examples: 294409, 294387, 294485, 294369
+
+  Range 588,718 to 588,918:
+    Composites tested: 187
+    False positives found: 4
+    Error rate: 0.02139037
+    Examples: 588873, 588913, 588745, 588901
+
+  Range 883,127 to 883,327:
+    Composites tested: 186
+    False positives found: 5
+    Error rate: 0.02688172
+    Examples: 883201, 883297, 883209, 883153, 883227
+
+  Range 314,721 to 314,921:
+    Composites tested: 188
+    False positives found: 8
+    Error rate: 0.04255319
+    Examples: 314721, 314913, 314785, 314821, 314859
+
+  Range 629,542 to 629,742:
+    Composites tested: 185
+    False positives found: 5
+    Error rate: 0.02702703
+    Examples: 629571, 629641, 629581, 629553, 629563
+
+  Range 944,363 to 944,563:
+    Composites tested: 180
+    False positives found: 6
+    Error rate: 0.03333333
+    Examples: 944481, 944385, 944553, 944371, 944441
+
+  Range 334,053 to 334,253:
+    Composites tested: 187
+    False positives found: 7
+    Error rate: 0.03743316
+    Examples: 334083, 334085, 334153, 334123, 334125
+
+  Range 668,206 to 668,406:
+    Composites tested: 195
+    False positives found: 5
+    Error rate: 0.02564103
+    Examples: 668263, 668361, 668365, 668337, 668379
+
+  Range 1,002,359 to 1,002,559:
+    Composites tested: 183
+    False positives found: 5
+    Error rate: 0.02732240
+    Examples: 1002401, 1002531, 1002373, 1002375, 1002513
+
+  Range 340,461 to 340,661:
+    Composites tested: 184
+    False positives found: 8
+    Error rate: 0.04347826
+    Examples: 340611, 340617, 340491, 340561, 340625
+
+  Range 681,022 to 681,222:
+    Composites tested: 187
+    False positives found: 5
+    Error rate: 0.02673797
+    Examples: 681033, 681073, 681171, 681081, 681085
+
+  Range 1,021,583 to 1,021,783:
+    Composites tested: 189
+    False positives found: 4
+    Error rate: 0.02116402
+    Examples: 1021737, 1021681, 1021645, 1021735
+
+  Range 398,901 to 399,101:
+    Composites tested: 184
+    False positives found: 6
+    Error rate: 0.03260870
+    Examples: 398913, 398945, 398905, 398961, 399001
+
+  Range 797,902 to 798,102:
+    Composites tested: 185
+    False positives found: 7
+    Error rate: 0.03783784
+    Examples: 798081, 797961, 798027, 798001, 797905
+
+  Range 1,196,903 to 1,197,103:
+    Composites tested: 186
+    False positives found: 3
+    Error rate: 0.01612903
+    Examples: 1196921, 1196931, 1197003
+
+  Range 409,941 to 410,141:
+    Composites tested: 186
+    False positives found: 8
+    Error rate: 0.04301075
+    Examples: 409953, 409981, 410073, 409971, 410041
+
+  Range 819,982 to 820,182:
+    Composites tested: 188
+    False positives found: 6
+    Error rate: 0.03191489
+    Examples: 820065, 820105, 820009, 820081, 820121
+
+  Range 1,230,023 to 1,230,223:
+    Composites tested: 190
+    False positives found: 4
+    Error rate: 0.02105263
+    Examples: 1230121, 1230085, 1230123, 1230221
+
+  Range 448,965 to 449,165:
+    Composites tested: 184
+    False positives found: 6
+    Error rate: 0.03260870
+    Examples: 449097, 449065, 449067, 449041, 449139
+
+  Range 898,030 to 898,230:
+    Composites tested: 183
+    False positives found: 5
+    Error rate: 0.02732240
+    Examples: 898113, 898179, 898089, 898225, 898039
+
+  Range 1,347,095 to 1,347,295:
+    Composites tested: 187
+    False positives found: 7
+    Error rate: 0.03743316
+    Examples: 1347205, 1347177, 1347153, 1347217, 1347249
+
+  Range 488,781 to 488,981:
+    Composites tested: 187
+    False positives found: 6
+    Error rate: 0.03208556
+    Examples: 488841, 488811, 488941, 488881, 488913
+
+  Range 977,662 to 977,862:
+    Composites tested: 187
+    False positives found: 6
+    Error rate: 0.03208556
+    Examples: 977665, 977667, 977763, 977673, 977783
+
+  Range 1,466,543 to 1,466,743:
+    Composites tested: 186
+    False positives found: 4
+    Error rate: 0.02150538
+    Examples: 1466609, 1466643, 1466641, 1466667
+
+  Range 512,361 to 512,561:
+    Composites tested: 189
+    False positives found: 12
+    Error rate: 0.06349206
+    Examples: 512481, 512425, 512361, 512441, 512553
+
+  Range 1,024,822 to 1,025,022:
+    Composites tested: 183
+    False positives found: 5
+    Error rate: 0.02732240
+    Examples: 1024993, 1024897, 1024977, 1024851, 1024923
+
+  Range 1,537,283 to 1,537,483:
+    Composites tested: 186
+    False positives found: 6
+    Error rate: 0.03225806
+    Examples: 1537381, 1537305, 1537321, 1537425, 1537329
+
+  Range 619,705 to 620,105:
+    Composites tested: 373
+    False positives found: 11
+    Error rate: 0.02949062
+    Examples: 620097, 620065, 619809, 619779, 620005
+
+  Range 969,769 to 970,169:
+    Composites tested: 373
+    False positives found: 9
+    Error rate: 0.02412869
+    Examples: 970145, 970113, 970017, 969961, 969819
+
+  Range 1,382,665 to 1,383,065:
+    Composites tested: 380
+    False positives found: 16
+    Error rate: 0.04210526
+    Examples: 1382721, 1383041, 1382951, 1382745, 1382841
+
+  Range 1,582,381 to 1,582,781:
+    Composites tested: 373
+    False positives found: 4
+    Error rate: 0.01072386
+    Examples: 1582593, 1582467, 1582689, 1582631
+
+  Range 3,702,961 to 3,703,361:
+    Composites tested: 373
+    False positives found: 5
+    Error rate: 0.01340483
+    Examples: 3703137, 3703179, 3703251, 3703257, 3703261
+
+  Range 4,998,871 to 4,999,271:
+    Composites tested: 375
+    False positives found: 10
+    Error rate: 0.02666667
+    Examples: 4998921, 4998953, 4998891, 4999083, 4999179
+
+  Range 5,937,985 to 5,938,385:
+    Composites tested: 368
+    False positives found: 8
+    Error rate: 0.02173913
+    Examples: 5938049, 5938113, 5938017, 5938059, 5938383
+
+  Range 1,910,345 to 1,910,745:
+    Composites tested: 376
+    False positives found: 11
+    Error rate: 0.02925532
+    Examples: 1910371, 1910365, 1910629, 1910665, 1910481
+
+  Range 2,723,625 to 2,724,025:
+    Composites tested: 370
+    False positives found: 7
+    Error rate: 0.01891892
+    Examples: 2723907, 2724009, 2723821, 2723631, 2723983
+
+  Range 3,117,005 to 3,117,405:
+    Composites tested: 378
+    False positives found: 10
+    Error rate: 0.02645503
+    Examples: 3117249, 3117313, 3117379, 3117129, 3117099
+
+  Range 7,293,905 to 7,294,305:
+    Composites tested: 377
+    False positives found: 4
+    Error rate: 0.01061008
+    Examples: 7293963, 7294251, 7294227, 7294085
+
+  Range 9,846,455 to 9,846,855:
+    Composites tested: 371
+    False positives found: 2
+    Error rate: 0.00539084
+    Examples: 9846843, 9846483
+
+  Range 11,696,225 to 11,696,625:
+    Composites tested: 372
+    False positives found: 7
+    Error rate: 0.01881720
+    Examples: 11696257, 11696409, 11696335, 11696401, 11696241
+
+  Range 4,261,785 to 4,262,185:
+    Composites tested: 371
+    False positives found: 7
+    Error rate: 0.01886792
+    Examples: 4261953, 4261899, 4262091, 4262001, 4261809
+
+  Range 4,877,309 to 4,877,709:
+    Composites tested: 377
+    False positives found: 5
+    Error rate: 0.01326260
+    Examples: 4877473, 4877601, 4877641, 4877553, 4877533
+
+  Range 11,412,929 to 11,413,329:
+    Composites tested: 379
+    False positives found: 6
+    Error rate: 0.01583113
+    Examples: 11413249, 11413257, 11413325, 11413299, 11413011
+
+  Range 15,406,919 to 15,407,319:
+    Composites tested: 372
+    False positives found: 2
+    Error rate: 0.00537634
+    Examples: 15407169, 15406977
+
+  Range 18,301,265 to 18,301,665:
+    Composites tested: 378
+    False positives found: 4
+    Error rate: 0.01058201
+    Examples: 18301465, 18301587, 18301377, 18301405
+
+  Range 6,953,565 to 6,953,965:
+    Composites tested: 368
+    False positives found: 7
+    Error rate: 0.01902174
+    Examples: 6953761, 6953763, 6953701, 6953673, 6953769
+
+  Range 16,271,265 to 16,271,665:
+    Composites tested: 376
+    False positives found: 3
+    Error rate: 0.00797872
+    Examples: 16271465, 16271457, 16271313
+
+  Range 26,091,825 to 26,092,225:
+    Composites tested: 378
+    False positives found: 3
+    Error rate: 0.00793651
+    Examples: 26092137, 26092225, 26092085
+
+  Range 18,621,221 to 18,621,621:
+    Composites tested: 372
+    False positives found: 4
+    Error rate: 0.01075269
+    Examples: 18621489, 18621417, 18621321, 18621445
+
+  Range 25,137,731 to 25,138,131:
+    Composites tested: 372
+    False positives found: 1
+    Error rate: 0.00268817
+    Examples: 25137841
+
+  Range 29,860,085 to 29,860,485:
+    Composites tested: 380
+    False positives found: 1
+    Error rate: 0.00263158
+    Examples: 29860473
+
+  Range 58,821,311 to 58,821,711:
+    Composites tested: 381
+    False positives found: 3
+    Error rate: 0.00787402
+    Examples: 58821361, 58821509, 58821511
+
+  Range 69,871,385 to 69,871,785:
+    Composites tested: 372
+    False positives found: 5
+    Error rate: 0.01344086
+    Examples: 69871713, 69871521, 69871765, 69871449, 69871583
+
+  Range 94,322,735 to 94,323,135:
+    Composites tested: 379
+    False positives found: 2
+    Error rate: 0.00527704
+    Examples: 94322971, 94322789
+
+  Range 1,000 to 5,000:
+    Composites tested: 3,500
+    False positives found: 290
+    Error rate: 0.08285714
+    Examples: 3585, 4097, 1025, 2049, 1029
+
+  Range 9,900 to 10,100:
+    Composites tested: 181
+    False positives found: 11
+    Error rate: 0.06077348
+    Examples: 10081, 9987, 10083, 10021, 9993
+
+  Range 29,340 to 29,342:
+    Composites tested: 3
+    False positives found: 1
+    Error rate: 0.33333333
+    Examples: 29341
+
+  Range 50,000 to 51,000:
+    Composites tested: 912
+    False positives found: 53
+    Error rate: 0.05811404
+    Examples: 50561, 50187, 50961, 50451, 50963
+
+  Range 99,000 to 100,000:
+    Composites tested: 914
+    False positives found: 37
+    Error rate: 0.04048140
+    Examples: 99201, 99459, 99205, 99207, 99339
+
+  Range 619,905 to 620,905:
+    Composites tested: 925
+    False positives found: 22
+    Error rate: 0.02378378
+    Examples: 620417, 620289, 620817, 619923, 620409
+
+  Range 1,000,000 to 1,001,000:
+    Composites tested: 926
+    False positives found: 27
+    Error rate: 0.02915767
+    Examples: 1000705, 1000711, 1000085, 1000729, 1000473
+
+  Range 10,000,000 to 10,001,000:
+    Composites tested: 940
+    False positives found: 13
+    Error rate: 0.01382979
+    Examples: 10000705, 10000897, 10000803, 10000165, 10000443
+
+  Range 100,000,000 to 100,001,000:
+    Composites tested: 947
+    False positives found: 6
+    Error rate: 0.00633580
+    Examples: 100000225, 100000993, 100000419, 100000041, 100000209
+
+  Range 924 to 1,124:
+    Composites tested: 170
+    False positives found: 16
+    Error rate: 0.09411765
+    Examples: 993, 1025, 1059, 1029, 935
+
+  Range 1,948 to 2,148:
+    Composites tested: 172
+    False positives found: 19
+    Error rate: 0.11046512
+    Examples: 2049, 2059, 2071, 2073, 2077
+
+  Range 3,996 to 4,196:
+    Composites tested: 177
+    False positives found: 11
+    Error rate: 0.06214689
+    Examples: 4033, 4097, 4131, 4161, 4005
+
+  Range 8,092 to 8,292:
+    Composites tested: 178
+    False positives found: 15
+    Error rate: 0.08426966
+    Examples: 8193, 8097, 8259, 8261, 8137
+
+  Range 16,284 to 16,484:
+    Composites tested: 182
+    False positives found: 11
+    Error rate: 0.06043956
+    Examples: 16385, 16291, 16323, 16297, 16329
+
+  Range 32,668 to 32,868:
+    Composites tested: 183
+    False positives found: 13
+    Error rate: 0.07103825
+    Examples: 32865, 32769, 32705, 32673, 32805
+
+  Range 65,436 to 65,636:
+    Composites tested: 180
+    False positives found: 12
+    Error rate: 0.06666667
+    Examples: 65569, 65473, 65541, 65605, 65577
+
+  Range 130,972 to 131,172:
+    Composites tested: 184
+    False positives found: 11
+    Error rate: 0.05978261
+    Examples: 130977, 131073, 131105, 131045, 131131
+
+  Range 262,044 to 262,244:
+    Composites tested: 182
+    False positives found: 4
+    Error rate: 0.02197802
+    Examples: 262209, 262145, 262061, 262143
+
+  Range 524,188 to 524,388:
+    Composites tested: 182
+    False positives found: 5
+    Error rate: 0.02747253
+    Examples: 524225, 524289, 524239, 524211, 524283
+
+  Range 1,048,476 to 1,048,676:
+    Composites tested: 187
+    False positives found: 7
+    Error rate: 0.03743316
+    Examples: 1048577, 1048617, 1048521, 1048587, 1048497
+
+  Range 2,097,052 to 2,097,252:
+    Composites tested: 191
+    False positives found: 7
+    Error rate: 0.03664921
+    Examples: 2097153, 2097187, 2097219, 2097061, 2097177
+
+  Range 4,194,204 to 4,194,404:
+    Composites tested: 188
+    False positives found: 4
+    Error rate: 0.02127660
+    Examples: 4194273, 4194363, 4194321, 4194303
+
+  Range 8,388,508 to 8,388,708:
+    Composites tested: 187
+    False positives found: 5
+    Error rate: 0.02673797
+    Examples: 8388609, 8388655, 8388601, 8388607, 8388703
+
+  Range 16,777,116 to 16,777,316:
+    Composites tested: 190
+    False positives found: 2
+    Error rate: 0.01052632
+    Examples: 16777217, 16777171
+
+  Range 33,554,332 to 33,554,532:
+    Composites tested: 189
+    False positives found: 3
+    Error rate: 0.01587302
+    Examples: 33554433, 33554485, 33554431
+
+  Range 67,108,764 to 67,108,964:
+    Composites tested: 191
+    False positives found: 3
+    Error rate: 0.01570681
+    Examples: 67108865, 67108803, 67108951
+
+  Range 536,870,812 to 536,871,012:
+    Composites tested: 190
+    False positives found: 1
+    Error rate: 0.00526316
+    Examples: 536870911
+
+  Range 900 to 1,100:
+    Composites tested: 171
+    False positives found: 16
+    Error rate: 0.09356725
+    Examples: 993, 1025, 1059, 1029, 935
+
+  Range 9,900 to 10,100:
+    Composites tested: 181
+    False positives found: 11
+    Error rate: 0.06077348
+    Examples: 10081, 9987, 10083, 10021, 9993
+
+  Range 99,900 to 100,100:
+    Composites tested: 187
+    False positives found: 11
+    Error rate: 0.05882353
+    Examples: 99905, 99937, 100001, 100009, 100041
+
+  Range 999,900 to 1,000,100:
+    Composites tested: 187
+    False positives found: 6
+    Error rate: 0.03208556
+    Examples: 1000001, 999937, 999969, 1000011, 999993
+
+  Range 9,999,900 to 10,000,100:
+    Composites tested: 190
+    False positives found: 3
+    Error rate: 0.01578947
+    Examples: 9999993, 9999939, 9999921
+
+  Range 99,999,900 to 100,000,100:
+    Composites tested: 190
+    False positives found: 1
+    Error rate: 0.00526316
+    Examples: 100000041
+
+k = 3:
+  Total composites tested: 42,660
+  False positives found: 622
+  Overall error rate: 0.01458040
+
+  Ranges with false positives:
+
+  Range 461 to 661:
+    Composites tested: 168
+    False positives found: 15
+    Error rate: 0.08928571
+    Examples: 481, 513, 579, 645, 615
+
+  Range 1,022 to 1,222:
+    Composites tested: 174
+    False positives found: 16
+    Error rate: 0.09195402
+    Examples: 1183, 1025, 1059, 1125, 1029
+
+  Range 1,583 to 1,783:
+    Composites tested: 174
+    False positives found: 16
+    Error rate: 0.09195402
+    Examples: 1729, 1635, 1731, 1701, 1641
+
+  Range 1,005 to 1,205:
+    Composites tested: 172
+    False positives found: 16
+    Error rate: 0.09302326
+    Examples: 1025, 1059, 1125, 1029, 1161
+
+  Range 2,110 to 2,310:
+    Composites tested: 175
+    False positives found: 10
+    Error rate: 0.05714286
+    Examples: 2145, 2307, 2217, 2187, 2283
+
+  Range 3,215 to 3,415:
+    Composites tested: 175
+    False positives found: 9
+    Error rate: 0.05142857
+    Examples: 3367, 3241, 3369, 3273, 3277
+
+  Range 1,629 to 1,829:
+    Composites tested: 178
+    False positives found: 18
+    Error rate: 0.10112360
+    Examples: 1729, 1825, 1731, 1635, 1765
+
+  Range 3,358 to 3,558:
+    Composites tested: 175
+    False positives found: 10
+    Error rate: 0.05714286
+    Examples: 3489, 3367, 3369, 3439, 3375
+
+  Range 5,087 to 5,287:
+    Composites tested: 179
+    False positives found: 11
+    Error rate: 0.06145251
+    Examples: 5185, 5091, 5187, 5097, 5161
+
+  Range 2,365 to 2,565:
+    Composites tested: 176
+    False positives found: 9
+    Error rate: 0.05113636
+    Examples: 2401, 2465, 2369, 2529, 2561
+
+  Range 4,830 to 5,030:
+    Composites tested: 176
+    False positives found: 8
+    Error rate: 0.04545455
+    Examples: 4961, 4965, 5001, 4913, 4881
+
+  Range 7,295 to 7,495:
+    Composites tested: 181
+    False positives found: 6
+    Error rate: 0.03314917
+    Examples: 7363, 7401, 7381, 7449, 7323
+
+  Range 2,721 to 2,921:
+    Composites tested: 176
+    False positives found: 10
+    Error rate: 0.05681818
+    Examples: 2881, 2721, 2821, 2885, 2761
+
+  Range 5,542 to 5,742:
+    Composites tested: 178
+    False positives found: 11
+    Error rate: 0.06179775
+    Examples: 5601, 5667, 5611, 5551, 5721
+
+  Range 8,363 to 8,563:
+    Composites tested: 180
+    False positives found: 5
+    Error rate: 0.02777778
+    Examples: 8385, 8421, 8457, 8365, 8401
+
+  Range 6,501 to 6,701:
+    Composites tested: 179
+    False positives found: 10
+    Error rate: 0.05586592
+    Examples: 6561, 6533, 6601, 6697, 6537
+
+  Range 19,703 to 19,903:
+    Composites tested: 181
+    False positives found: 4
+    Error rate: 0.02209945
+    Examples: 19729, 19857, 19731, 19825
+
+  Range 8,811 to 9,011:
+    Composites tested: 178
+    False positives found: 4
+    Error rate: 0.02247191
+    Examples: 8817, 8947, 8885, 8911
+
+  Range 17,722 to 17,922:
+    Composites tested: 181
+    False positives found: 6
+    Error rate: 0.03314917
+    Examples: 17859, 17893, 17767, 17769, 17865
+
+  Range 26,633 to 26,833:
+    Composites tested: 177
+    False positives found: 4
+    Error rate: 0.02259887
+    Examples: 26809, 26785, 26677, 26797
+
+  Range 10,485 to 10,685:
+    Composites tested: 181
+    False positives found: 5
+    Error rate: 0.02762431
+    Examples: 10625, 10649, 10585, 10587, 10621
+
+  Range 21,070 to 21,270:
+    Composites tested: 182
+    False positives found: 2
+    Error rate: 0.01098901
+    Examples: 21129, 21099
+
+  Range 31,655 to 31,855:
+    Composites tested: 183
+    False positives found: 2
+    Error rate: 0.01092896
+    Examples: 31681, 31697
+
+  Range 15,741 to 15,941:
+    Composites tested: 179
+    False positives found: 4
+    Error rate: 0.02234637
+    Examples: 15841, 15769, 15777, 15751
+
+  Range 31,582 to 31,782:
+    Composites tested: 182
+    False positives found: 6
+    Error rate: 0.03296703
+    Examples: 31681, 31747, 31651, 31621, 31761
+
+  Range 47,423 to 47,623:
+    Composites tested: 182
+    False positives found: 4
+    Error rate: 0.02197802
+    Examples: 47593, 47577, 47611, 47461
+
+  Range 29,241 to 29,441:
+    Composites tested: 180
+    False positives found: 3
+    Error rate: 0.01666667
+    Examples: 29307, 29341, 29403
+
+  Range 40,941 to 41,141:
+    Composites tested: 184
+    False positives found: 4
+    Error rate: 0.02173913
+    Examples: 41041, 41067, 41003, 40951
+
+  Range 81,982 to 82,182:
+    Composites tested: 184
+    False positives found: 1
+    Error rate: 0.00543478
+    Examples: 82145
+
+  Range 123,023 to 123,223:
+    Composites tested: 186
+    False positives found: 1
+    Error rate: 0.00537634
+    Examples: 123201
+
+  Range 46,557 to 46,757:
+    Composites tested: 179
+    False positives found: 2
+    Error rate: 0.01117318
+    Examples: 46657, 46561
+
+  Range 139,871 to 140,071:
+    Composites tested: 182
+    False positives found: 2
+    Error rate: 0.01098901
+    Examples: 139897, 139877
+
+  Range 52,533 to 52,733:
+    Composites tested: 180
+    False positives found: 1
+    Error rate: 0.00555556
+    Examples: 52633
+
+  Range 105,166 to 105,366:
+    Composites tested: 182
+    False positives found: 1
+    Error rate: 0.00549451
+    Examples: 105297
+
+  Range 157,799 to 157,999:
+    Composites tested: 184
+    False positives found: 2
+    Error rate: 0.01086957
+    Examples: 157913, 157873
+
+  Range 62,645 to 62,845:
+    Composites tested: 186
+    False positives found: 3
+    Error rate: 0.01612903
+    Examples: 62817, 62841, 62745
+
+  Range 125,390 to 125,590:
+    Composites tested: 188
+    False positives found: 2
+    Error rate: 0.01063830
+    Examples: 125553, 125563
+
+  Range 188,135 to 188,335:
+    Composites tested: 182
+    False positives found: 3
+    Error rate: 0.01648352
+    Examples: 188269, 188165, 188191
+
+  Range 63,873 to 64,073:
+    Composites tested: 187
+    False positives found: 3
+    Error rate: 0.01604278
+    Examples: 64041, 63973, 64005
+
+  Range 191,819 to 192,019:
+    Composites tested: 186
+    False positives found: 2
+    Error rate: 0.01075269
+    Examples: 192001, 191959
+
+  Range 75,261 to 75,461:
+    Composites tested: 183
+    False positives found: 2
+    Error rate: 0.01092896
+    Examples: 75361, 75441
+
+  Range 225,983 to 226,183:
+    Composites tested: 185
+    False positives found: 1
+    Error rate: 0.00540541
+    Examples: 226081
+
+  Range 115,821 to 116,021:
+    Composites tested: 180
+    False positives found: 3
+    Error rate: 0.01666667
+    Examples: 115921, 116003, 115827
+
+  Range 347,663 to 347,863:
+    Composites tested: 187
+    False positives found: 1
+    Error rate: 0.00534759
+    Examples: 347777
+
+  Range 126,117 to 126,317:
+    Composites tested: 184
+    False positives found: 2
+    Error rate: 0.01086957
+    Examples: 126217, 126133
+
+  Range 162,301 to 162,501:
+    Composites tested: 189
+    False positives found: 1
+    Error rate: 0.00529101
+    Examples: 162401
+
+  Range 171,981 to 172,181:
+    Composites tested: 184
+    False positives found: 1
+    Error rate: 0.00543478
+    Examples: 172081
+
+  Range 188,361 to 188,561:
+    Composites tested: 186
+    False positives found: 3
+    Error rate: 0.01612903
+    Examples: 188501, 188461, 188551
+
+  Range 376,822 to 377,022:
+    Composites tested: 184
+    False positives found: 1
+    Error rate: 0.00543478
+    Examples: 376993
+
+  Range 252,501 to 252,701:
+    Composites tested: 189
+    False positives found: 1
+    Error rate: 0.00529101
+    Examples: 252601
+
+  Range 505,102 to 505,302:
+    Composites tested: 184
+    False positives found: 1
+    Error rate: 0.00543478
+    Examples: 505141
+
+  Range 294,309 to 294,509:
+    Composites tested: 182
+    False positives found: 1
+    Error rate: 0.00549451
+    Examples: 294409
+
+  Range 314,721 to 314,921:
+    Composites tested: 188
+    False positives found: 1
+    Error rate: 0.00531915
+    Examples: 314821
+
+  Range 944,363 to 944,563:
+    Composites tested: 180
+    False positives found: 1
+    Error rate: 0.00555556
+    Examples: 944441
+
+  Range 334,053 to 334,253:
+    Composites tested: 187
+    False positives found: 1
+    Error rate: 0.00534759
+    Examples: 334153
+
+  Range 1,002,359 to 1,002,559:
+    Composites tested: 183
+    False positives found: 1
+    Error rate: 0.00546448
+    Examples: 1002513
+
+  Range 340,461 to 340,661:
+    Composites tested: 184
+    False positives found: 1
+    Error rate: 0.00543478
+    Examples: 340561
+
+  Range 398,901 to 399,101:
+    Composites tested: 184
+    False positives found: 1
+    Error rate: 0.00543478
+    Examples: 399001
+
+  Range 797,902 to 798,102:
+    Composites tested: 185
+    False positives found: 1
+    Error rate: 0.00540541
+    Examples: 798001
+
+  Range 409,941 to 410,141:
+    Composites tested: 186
+    False positives found: 1
+    Error rate: 0.00537634
+    Examples: 410041
+
+  Range 819,982 to 820,182:
+    Composites tested: 188
+    False positives found: 1
+    Error rate: 0.00531915
+    Examples: 820125
+
+  Range 448,965 to 449,165:
+    Composites tested: 184
+    False positives found: 1
+    Error rate: 0.00543478
+    Examples: 449065
+
+  Range 1,347,095 to 1,347,295:
+    Composites tested: 187
+    False positives found: 2
+    Error rate: 0.01069519
+    Examples: 1347193, 1347217
+
+  Range 488,781 to 488,981:
+    Composites tested: 187
+    False positives found: 1
+    Error rate: 0.00534759
+    Examples: 488881
+
+  Range 512,361 to 512,561:
+    Composites tested: 189
+    False positives found: 1
+    Error rate: 0.00529101
+    Examples: 512461
+
+  Range 1,024,822 to 1,025,022:
+    Composites tested: 183
+    False positives found: 1
+    Error rate: 0.00546448
+    Examples: 1024993
+
+  Range 1,537,283 to 1,537,483:
+    Composites tested: 186
+    False positives found: 1
+    Error rate: 0.00537634
+    Examples: 1537381
+
+  Range 619,705 to 620,105:
+    Composites tested: 373
+    False positives found: 1
+    Error rate: 0.00268097
+    Examples: 619881
+
+  Range 5,937,985 to 5,938,385:
+    Composites tested: 368
+    False positives found: 2
+    Error rate: 0.00543478
+    Examples: 5938049, 5938141
+
+  Range 4,877,309 to 4,877,709:
+    Composites tested: 377
+    False positives found: 1
+    Error rate: 0.00265252
+    Examples: 4877641
+
+  Range 58,821,311 to 58,821,711:
+    Composites tested: 381
+    False positives found: 1
+    Error rate: 0.00262467
+    Examples: 58821509
+
+  Range 1,000 to 5,000:
+    Composites tested: 3,500
+    False positives found: 234
+    Error rate: 0.06685714
+    Examples: 4097, 1537, 3585, 1025, 1541
+
+  Range 9,900 to 10,100:
+    Composites tested: 181
+    False positives found: 6
+    Error rate: 0.03314917
+    Examples: 10021, 9993, 9937, 9939, 10041
+
+  Range 29,340 to 29,342:
+    Composites tested: 3
+    False positives found: 1
+    Error rate: 0.33333333
+    Examples: 29341
+
+  Range 50,000 to 51,000:
+    Composites tested: 912
+    False positives found: 8
+    Error rate: 0.00877193
+    Examples: 50625, 50881, 50403, 50117, 50419
+
+  Range 99,000 to 100,000:
+    Composites tested: 914
+    False positives found: 3
+    Error rate: 0.00328228
+    Examples: 99993, 99219, 99631
+
+  Range 10,000,000 to 10,001,000:
+    Composites tested: 940
+    False positives found: 1
+    Error rate: 0.00106383
+    Examples: 10000705
+
+  Range 924 to 1,124:
+    Composites tested: 170
+    False positives found: 14
+    Error rate: 0.08235294
+    Examples: 993, 1025, 1059, 1029, 935
+
+  Range 1,948 to 2,148:
+    Composites tested: 172
+    False positives found: 15
+    Error rate: 0.08720930
+    Examples: 1953, 2049, 2019, 1991, 2025
+
+  Range 3,996 to 4,196:
+    Composites tested: 177
+    False positives found: 10
+    Error rate: 0.05649718
+    Examples: 4033, 4097, 4131, 4161, 4005
+
+  Range 8,092 to 8,292:
+    Composites tested: 178
+    False positives found: 4
+    Error rate: 0.02247191
+    Examples: 8113, 8187, 8261, 8121
+
+  Range 16,284 to 16,484:
+    Composites tested: 182
+    False positives found: 6
+    Error rate: 0.03296703
+    Examples: 16323, 16297, 16401, 16471, 16441
+
+  Range 32,668 to 32,868:
+    Composites tested: 183
+    False positives found: 7
+    Error rate: 0.03825137
+    Examples: 32865, 32705, 32805, 32811, 32851
+
+  Range 130,972 to 131,172:
+    Composites tested: 184
+    False positives found: 1
+    Error rate: 0.00543478
+    Examples: 131161
+
+  Range 900 to 1,100:
+    Composites tested: 171
+    False positives found: 15
+    Error rate: 0.08771930
+    Examples: 993, 1025, 1059, 1029, 935
+
+  Range 9,900 to 10,100:
+    Composites tested: 181
+    False positives found: 6
+    Error rate: 0.03314917
+    Examples: 10021, 9993, 9937, 9939, 10041
+
+  Range 999,900 to 1,000,100:
+    Composites tested: 187
+    False positives found: 1
+    Error rate: 0.00534759
+    Examples: 1000085
+
+k = 4:
+  Total composites tested: 42,660
+  False positives found: 141
+  Overall error rate: 0.00330520
+
+  Ranges with false positives:
+
+  Range 461 to 661:
+    Composites tested: 168
+    False positives found: 8
+    Error rate: 0.04761905
+    Examples: 481, 513, 645, 489, 585
+
+  Range 1,022 to 1,222:
+    Composites tested: 174
+    False positives found: 3
+    Error rate: 0.01724138
+    Examples: 1215, 1125, 1111
+
+  Range 1,583 to 1,783:
+    Composites tested: 174
+    False positives found: 2
+    Error rate: 0.01149425
+    Examples: 1729, 1713
+
+  Range 1,005 to 1,205:
+    Composites tested: 172
+    False positives found: 4
+    Error rate: 0.02325581
+    Examples: 1025, 1161, 1137, 1111
+
+  Range 2,110 to 2,310:
+    Composites tested: 175
+    False positives found: 3
+    Error rate: 0.01714286
+    Examples: 2145, 2187, 2255
+
+  Range 3,215 to 3,415:
+    Composites tested: 175
+    False positives found: 3
+    Error rate: 0.01714286
+    Examples: 3369, 3277, 3375
+
+  Range 1,629 to 1,829:
+    Composites tested: 178
+    False positives found: 1
+    Error rate: 0.00561798
+    Examples: 1729
+
+  Range 3,358 to 3,558:
+    Composites tested: 175
+    False positives found: 3
+    Error rate: 0.01714286
+    Examples: 3505, 3439, 3375
+
+  Range 5,087 to 5,287:
+    Composites tested: 179
+    False positives found: 2
+    Error rate: 0.01117318
+    Examples: 5285, 5103
+
+  Range 2,365 to 2,565:
+    Composites tested: 176
+    False positives found: 2
+    Error rate: 0.01136364
+    Examples: 2401, 2465
+
+  Range 4,830 to 5,030:
+    Composites tested: 176
+    False positives found: 2
+    Error rate: 0.01136364
+    Examples: 4921, 4913
+
+  Range 2,721 to 2,921:
+    Composites tested: 176
+    False positives found: 2
+    Error rate: 0.01136364
+    Examples: 2885, 2821
+
+  Range 5,542 to 5,742:
+    Composites tested: 178
+    False positives found: 1
+    Error rate: 0.00561798
+    Examples: 5713
+
+  Range 8,363 to 8,563:
+    Composites tested: 180
+    False positives found: 1
+    Error rate: 0.00555556
+    Examples: 8401
+
+  Range 6,501 to 6,701:
+    Composites tested: 179
+    False positives found: 6
+    Error rate: 0.03351955
+    Examples: 6561, 6533, 6601, 6697, 6541
+
+  Range 8,811 to 9,011:
+    Composites tested: 178
+    False positives found: 1
+    Error rate: 0.00561798
+    Examples: 8911
+
+  Range 17,722 to 17,922:
+    Composites tested: 181
+    False positives found: 1
+    Error rate: 0.00552486
+    Examples: 17767
+
+  Range 10,485 to 10,685:
+    Composites tested: 181
+    False positives found: 1
+    Error rate: 0.00552486
+    Examples: 10585
+
+  Range 15,741 to 15,941:
+    Composites tested: 179
+    False positives found: 1
+    Error rate: 0.00558659
+    Examples: 15841
+
+  Range 31,582 to 31,782:
+    Composites tested: 182
+    False positives found: 1
+    Error rate: 0.00549451
+    Examples: 31621
+
+  Range 40,941 to 41,141:
+    Composites tested: 184
+    False positives found: 1
+    Error rate: 0.00543478
+    Examples: 41041
+
+  Range 46,557 to 46,757:
+    Composites tested: 179
+    False positives found: 1
+    Error rate: 0.00558659
+    Examples: 46657
+
+  Range 52,533 to 52,733:
+    Composites tested: 180
+    False positives found: 1
+    Error rate: 0.00555556
+    Examples: 52633
+
+  Range 188,135 to 188,335:
+    Composites tested: 182
+    False positives found: 1
+    Error rate: 0.00549451
+    Examples: 188191
+
+  Range 191,819 to 192,019:
+    Composites tested: 186
+    False positives found: 2
+    Error rate: 0.01075269
+    Examples: 192001, 191959
+
+  Range 75,261 to 75,461:
+    Composites tested: 183
+    False positives found: 1
+    Error rate: 0.00546448
+    Examples: 75361
+
+  Range 115,821 to 116,021:
+    Composites tested: 180
+    False positives found: 2
+    Error rate: 0.01111111
+    Examples: 115921, 116003
+
+  Range 347,663 to 347,863:
+    Composites tested: 187
+    False positives found: 1
+    Error rate: 0.00534759
+    Examples: 347777
+
+  Range 126,117 to 126,317:
+    Composites tested: 184
+    False positives found: 1
+    Error rate: 0.00543478
+    Examples: 126217
+
+  Range 162,301 to 162,501:
+    Composites tested: 189
+    False positives found: 1
+    Error rate: 0.00529101
+    Examples: 162401
+
+  Range 171,981 to 172,181:
+    Composites tested: 184
+    False positives found: 1
+    Error rate: 0.00543478
+    Examples: 172081
+
+  Range 188,361 to 188,561:
+    Composites tested: 186
+    False positives found: 1
+    Error rate: 0.00537634
+    Examples: 188501
+
+  Range 376,822 to 377,022:
+    Composites tested: 184
+    False positives found: 1
+    Error rate: 0.00543478
+    Examples: 376993
+
+  Range 252,501 to 252,701:
+    Composites tested: 189
+    False positives found: 1
+    Error rate: 0.00529101
+    Examples: 252601
+
+  Range 294,309 to 294,509:
+    Composites tested: 182
+    False positives found: 1
+    Error rate: 0.00549451
+    Examples: 294409
+
+  Range 314,721 to 314,921:
+    Composites tested: 188
+    False positives found: 1
+    Error rate: 0.00531915
+    Examples: 314821
+
+  Range 334,053 to 334,253:
+    Composites tested: 187
+    False positives found: 1
+    Error rate: 0.00534759
+    Examples: 334153
+
+  Range 398,901 to 399,101:
+    Composites tested: 184
+    False positives found: 1
+    Error rate: 0.00543478
+    Examples: 399001
+
+  Range 448,965 to 449,165:
+    Composites tested: 184
+    False positives found: 1
+    Error rate: 0.00543478
+    Examples: 449065
+
+  Range 488,781 to 488,981:
+    Composites tested: 187
+    False positives found: 1
+    Error rate: 0.00534759
+    Examples: 488881
+
+  Range 512,361 to 512,561:
+    Composites tested: 189
+    False positives found: 1
+    Error rate: 0.00529101
+    Examples: 512461
+
+  Range 1,537,283 to 1,537,483:
+    Composites tested: 186
+    False positives found: 1
+    Error rate: 0.00537634
+    Examples: 1537381
+
+  Range 4,877,309 to 4,877,709:
+    Composites tested: 377
+    False positives found: 1
+    Error rate: 0.00265252
+    Examples: 4877641
+
+  Range 1,000 to 5,000:
+    Composites tested: 3,500
+    False positives found: 48
+    Error rate: 0.01371429
+    Examples: 1921, 1281, 1541, 2821, 1417
+
+  Range 29,340 to 29,342:
+    Composites tested: 3
+    False positives found: 1
+    Error rate: 0.33333333
+    Examples: 29341
+
+  Range 50,000 to 51,000:
+    Composites tested: 912
+    False positives found: 1
+    Error rate: 0.00109649
+    Examples: 50421
+
+  Range 924 to 1,124:
+    Composites tested: 170
+    False positives found: 5
+    Error rate: 0.02941176
+    Examples: 993, 1105, 1041, 1111, 925
+
+  Range 1,948 to 2,148:
+    Composites tested: 172
+    False positives found: 5
+    Error rate: 0.02906977
+    Examples: 2145, 2059, 1975, 2071, 2047
+
+  Range 3,996 to 4,196:
+    Composites tested: 177
+    False positives found: 3
+    Error rate: 0.01694915
+    Examples: 4123, 4033, 4187
+
+  Range 16,284 to 16,484:
+    Composites tested: 182
+    False positives found: 1
+    Error rate: 0.00549451
+    Examples: 16297
+
+  Range 32,668 to 32,868:
+    Composites tested: 183
+    False positives found: 2
+    Error rate: 0.01092896
+    Examples: 32865, 32805
+
+  Range 900 to 1,100:
+    Composites tested: 171
+    False positives found: 1
+    Error rate: 0.00584795
+    Examples: 993
+
+  Range 9,900 to 10,100:
+    Composites tested: 181
+    False positives found: 1
+    Error rate: 0.00552486
+    Examples: 9937
+
+k = 5:
+  Total composites tested: 42,660
+  False positives found: 206
+  Overall error rate: 0.00482888
+
+  Ranges with false positives:
+
+  Range 461 to 661:
+    Composites tested: 168
+    False positives found: 10
+    Error rate: 0.05952381
+    Examples: 481, 513, 579, 615, 489
+
+  Range 1,022 to 1,222:
+    Composites tested: 174
+    False positives found: 7
+    Error rate: 0.04022989
+    Examples: 1029, 1125, 1161, 1137, 1041
+
+  Range 1,583 to 1,783:
+    Composites tested: 174
+    False positives found: 5
+    Error rate: 0.02873563
+    Examples: 1729, 1705, 1641, 1713, 1689
+
+  Range 1,005 to 1,205:
+    Composites tested: 172
+    False positives found: 6
+    Error rate: 0.03488372
+    Examples: 1025, 1125, 1161, 1099, 1137
+
+  Range 2,110 to 2,310:
+    Composites tested: 175
+    False positives found: 3
+    Error rate: 0.01714286
+    Examples: 2217, 2187, 2197
+
+  Range 3,215 to 3,415:
+    Composites tested: 175
+    False positives found: 3
+    Error rate: 0.01714286
+    Examples: 3273, 3291, 3277
+
+  Range 1,629 to 1,829:
+    Composites tested: 178
+    False positives found: 4
+    Error rate: 0.02247191
+    Examples: 1729, 1689, 1635, 1685
+
+  Range 3,358 to 3,558:
+    Composites tested: 175
+    False positives found: 2
+    Error rate: 0.01142857
+    Examples: 3375, 3367
+
+  Range 5,087 to 5,287:
+    Composites tested: 179
+    False positives found: 3
+    Error rate: 0.01675978
+    Examples: 5185, 5097, 5103
+
+  Range 2,365 to 2,565:
+    Composites tested: 176
+    False positives found: 5
+    Error rate: 0.02840909
+    Examples: 2401, 2465, 2369, 2497, 2529
+
+  Range 4,830 to 5,030:
+    Composites tested: 176
+    False positives found: 2
+    Error rate: 0.01136364
+    Examples: 4913, 4921
+
+  Range 7,295 to 7,495:
+    Composites tested: 181
+    False positives found: 2
+    Error rate: 0.01104972
+    Examples: 7449, 7419
+
+  Range 2,721 to 2,921:
+    Composites tested: 176
+    False positives found: 3
+    Error rate: 0.01704545
+    Examples: 2761, 2821, 2841
+
+  Range 5,542 to 5,742:
+    Composites tested: 178
+    False positives found: 3
+    Error rate: 0.01685393
+    Examples: 5713, 5611, 5625
+
+  Range 8,363 to 8,563:
+    Composites tested: 180
+    False positives found: 2
+    Error rate: 0.01111111
+    Examples: 8401, 8457
+
+  Range 6,501 to 6,701:
+    Composites tested: 179
+    False positives found: 6
+    Error rate: 0.03351955
+    Examples: 6561, 6533, 6601, 6697, 6541
+
+  Range 8,811 to 9,011:
+    Composites tested: 178
+    False positives found: 4
+    Error rate: 0.02247191
+    Examples: 8889, 8947, 9003, 8911
+
+  Range 17,722 to 17,922:
+    Composites tested: 181
+    False positives found: 1
+    Error rate: 0.00552486
+    Examples: 17767
+
+  Range 26,633 to 26,833:
+    Composites tested: 177
+    False positives found: 1
+    Error rate: 0.00564972
+    Examples: 26797
+
+  Range 10,485 to 10,685:
+    Composites tested: 181
+    False positives found: 3
+    Error rate: 0.01657459
+    Examples: 10617, 10585, 10649
+
+  Range 15,741 to 15,941:
+    Composites tested: 179
+    False positives found: 1
+    Error rate: 0.00558659
+    Examples: 15841
+
+  Range 31,582 to 31,782:
+    Composites tested: 182
+    False positives found: 1
+    Error rate: 0.00549451
+    Examples: 31621
+
+  Range 29,241 to 29,441:
+    Composites tested: 180
+    False positives found: 1
+    Error rate: 0.00555556
+    Examples: 29341
+
+  Range 40,941 to 41,141:
+    Composites tested: 184
+    False positives found: 1
+    Error rate: 0.00543478
+    Examples: 41041
+
+  Range 46,557 to 46,757:
+    Composites tested: 179
+    False positives found: 1
+    Error rate: 0.00558659
+    Examples: 46657
+
+  Range 52,533 to 52,733:
+    Composites tested: 180
+    False positives found: 1
+    Error rate: 0.00555556
+    Examples: 52633
+
+  Range 62,645 to 62,845:
+    Composites tested: 186
+    False positives found: 1
+    Error rate: 0.00537634
+    Examples: 62745
+
+  Range 125,390 to 125,590:
+    Composites tested: 188
+    False positives found: 1
+    Error rate: 0.00531915
+    Examples: 125563
+
+  Range 188,135 to 188,335:
+    Composites tested: 182
+    False positives found: 1
+    Error rate: 0.00549451
+    Examples: 188191
+
+  Range 63,873 to 64,073:
+    Composites tested: 187
+    False positives found: 1
+    Error rate: 0.00534759
+    Examples: 63973
+
+  Range 191,819 to 192,019:
+    Composites tested: 186
+    False positives found: 1
+    Error rate: 0.00537634
+    Examples: 191959
+
+  Range 75,261 to 75,461:
+    Composites tested: 183
+    False positives found: 1
+    Error rate: 0.00546448
+    Examples: 75361
+
+  Range 225,983 to 226,183:
+    Composites tested: 185
+    False positives found: 1
+    Error rate: 0.00540541
+    Examples: 226081
+
+  Range 115,821 to 116,021:
+    Composites tested: 180
+    False positives found: 1
+    Error rate: 0.00555556
+    Examples: 115921
+
+  Range 126,117 to 126,317:
+    Composites tested: 184
+    False positives found: 2
+    Error rate: 0.01086957
+    Examples: 126217, 126129
+
+  Range 162,301 to 162,501:
+    Composites tested: 189
+    False positives found: 1
+    Error rate: 0.00529101
+    Examples: 162401
+
+  Range 171,981 to 172,181:
+    Composites tested: 184
+    False positives found: 1
+    Error rate: 0.00543478
+    Examples: 172081
+
+  Range 188,361 to 188,561:
+    Composites tested: 186
+    False positives found: 1
+    Error rate: 0.00537634
+    Examples: 188501
+
+  Range 376,822 to 377,022:
+    Composites tested: 184
+    False positives found: 1
+    Error rate: 0.00543478
+    Examples: 376993
+
+  Range 252,501 to 252,701:
+    Composites tested: 189
+    False positives found: 1
+    Error rate: 0.00529101
+    Examples: 252601
+
+  Range 294,309 to 294,509:
+    Composites tested: 182
+    False positives found: 1
+    Error rate: 0.00549451
+    Examples: 294409
+
+  Range 334,053 to 334,253:
+    Composites tested: 187
+    False positives found: 1
+    Error rate: 0.00534759
+    Examples: 334153
+
+  Range 340,461 to 340,661:
+    Composites tested: 184
+    False positives found: 1
+    Error rate: 0.00543478
+    Examples: 340561
+
+  Range 398,901 to 399,101:
+    Composites tested: 184
+    False positives found: 1
+    Error rate: 0.00543478
+    Examples: 399001
+
+  Range 819,982 to 820,182:
+    Composites tested: 188
+    False positives found: 1
+    Error rate: 0.00531915
+    Examples: 820125
+
+  Range 448,965 to 449,165:
+    Composites tested: 184
+    False positives found: 1
+    Error rate: 0.00543478
+    Examples: 449065
+
+  Range 488,781 to 488,981:
+    Composites tested: 187
+    False positives found: 1
+    Error rate: 0.00534759
+    Examples: 488881
+
+  Range 512,361 to 512,561:
+    Composites tested: 189
+    False positives found: 1
+    Error rate: 0.00529101
+    Examples: 512461
+
+  Range 1,537,283 to 1,537,483:
+    Composites tested: 186
+    False positives found: 1
+    Error rate: 0.00537634
+    Examples: 1537381
+
+  Range 5,937,985 to 5,938,385:
+    Composites tested: 368
+    False positives found: 1
+    Error rate: 0.00271739
+    Examples: 5938141
+
+  Range 4,877,309 to 4,877,709:
+    Composites tested: 377
+    False positives found: 1
+    Error rate: 0.00265252
+    Examples: 4877641
+
+  Range 1,000 to 5,000:
+    Composites tested: 3,500
+    False positives found: 70
+    Error rate: 0.02000000
+    Examples: 4097, 1921, 1281, 3585, 2821
+
+  Range 29,340 to 29,342:
+    Composites tested: 3
+    False positives found: 1
+    Error rate: 0.33333333
+    Examples: 29341
+
+  Range 50,000 to 51,000:
+    Composites tested: 912
+    False positives found: 1
+    Error rate: 0.00109649
+    Examples: 50625
+
+  Range 10,000,000 to 10,001,000:
+    Composites tested: 940
+    False positives found: 1
+    Error rate: 0.00106383
+    Examples: 10000705
+
+  Range 924 to 1,124:
+    Composites tested: 170
+    False positives found: 8
+    Error rate: 0.04705882
+    Examples: 993, 1025, 935, 1065, 1001
+
+  Range 1,948 to 2,148:
+    Composites tested: 172
+    False positives found: 5
+    Error rate: 0.02906977
+    Examples: 1985, 2025, 2071, 2073, 2047
+
+  Range 3,996 to 4,196:
+    Composites tested: 177
+    False positives found: 3
+    Error rate: 0.01694915
+    Examples: 4097, 4187, 4033
+
+  Range 16,284 to 16,484:
+    Composites tested: 182
+    False positives found: 3
+    Error rate: 0.01648352
+    Examples: 16297, 16401, 16471
+
+  Range 32,668 to 32,868:
+    Composites tested: 183
+    False positives found: 1
+    Error rate: 0.00546448
+    Examples: 32805
+
+  Range 65,436 to 65,636:
+    Composites tested: 180
+    False positives found: 1
+    Error rate: 0.00555556
+    Examples: 65577
+
+  Range 900 to 1,100:
+    Composites tested: 171
+    False positives found: 5
+    Error rate: 0.02923977
+    Examples: 993, 1099, 1011, 921, 925
+
+k = 10:
+  Total composites tested: 42,660
+  False positives found: 22
+  Overall error rate: 0.00051571
+
+  Ranges with false positives:
+
+  Range 461 to 661:
+    Composites tested: 168
+    False positives found: 1
+    Error rate: 0.00595238
+    Examples: 481
+
+  Range 1,583 to 1,783:
+    Composites tested: 174
+    False positives found: 1
+    Error rate: 0.00574713
+    Examples: 1729
+
+  Range 2,110 to 2,310:
+    Composites tested: 175
+    False positives found: 1
+    Error rate: 0.00571429
+    Examples: 2187
+
+  Range 1,629 to 1,829:
+    Composites tested: 178
+    False positives found: 1
+    Error rate: 0.00561798
+    Examples: 1729
+
+  Range 2,365 to 2,565:
+    Composites tested: 176
+    False positives found: 1
+    Error rate: 0.00568182
+    Examples: 2465
+
+  Range 6,501 to 6,701:
+    Composites tested: 179
+    False positives found: 3
+    Error rate: 0.01675978
+    Examples: 6561, 6601, 6533
+
+  Range 8,811 to 9,011:
+    Composites tested: 178
+    False positives found: 1
+    Error rate: 0.00561798
+    Examples: 8911
+
+  Range 15,741 to 15,941:
+    Composites tested: 179
+    False positives found: 1
+    Error rate: 0.00558659
+    Examples: 15841
+
+  Range 52,533 to 52,733:
+    Composites tested: 180
+    False positives found: 1
+    Error rate: 0.00555556
+    Examples: 52633
+
+  Range 188,135 to 188,335:
+    Composites tested: 182
+    False positives found: 1
+    Error rate: 0.00549451
+    Examples: 188191
+
+  Range 75,261 to 75,461:
+    Composites tested: 183
+    False positives found: 1
+    Error rate: 0.00546448
+    Examples: 75361
+
+  Range 334,053 to 334,253:
+    Composites tested: 187
+    False positives found: 1
+    Error rate: 0.00534759
+    Examples: 334153
+
+  Range 398,901 to 399,101:
+    Composites tested: 184
+    False positives found: 1
+    Error rate: 0.00543478
+    Examples: 399001
+
+  Range 1,000 to 5,000:
+    Composites tested: 3,500
+    False positives found: 5
+    Error rate: 0.00142857
+    Examples: 1729, 4033, 2187, 3125, 2047
+
+  Range 1,948 to 2,148:
+    Composites tested: 172
+    False positives found: 1
+    Error rate: 0.00581395
+    Examples: 2047
+
+  Range 3,996 to 4,196:
+    Composites tested: 177
+    False positives found: 1
+    Error rate: 0.00564972
+    Examples: 4033
+
+================================================================================
+
+CARMICHAEL NUMBERS ANALYSIS
+----------------------------------------
+
+Number    k=1         k=2         k=3         k=4         k=5         k=10    
+------------------------------------------------------------------------------
+561         4.20%     11.60%      0.90%      0.00%      0.30%      0.00%
+1105        3.60%      6.70%      0.60%      0.10%      0.00%      0.00%
+1729       75.60%     94.00%     82.40%     71.50%     89.10%     77.10%
+2465       18.00%     32.50%      7.90%      2.20%      2.90%      0.00%
+2821        7.30%     13.10%      1.90%      0.50%      0.30%      0.00%
+6601       20.20%     37.70%      9.10%      2.90%      6.90%      0.00%
+8911       23.40%     42.00%     15.10%      4.30%      9.20%      0.40%
+10585      16.20%     27.00%      6.70%      1.40%      1.90%      0.00%
+15841      41.00%     64.80%     38.90%     20.00%     35.90%      7.70%
+29341       4.00%      9.70%      0.90%      0.00%      0.10%      0.00%
+41041       7.30%     17.60%      1.40%      0.20%      0.60%      0.00%
+46657      10.60%     21.80%      4.60%      0.60%      1.30%      0.00%
+52633      21.10%     39.50%     11.60%      3.20%      7.80%      0.00%
+62745       5.70%     10.90%      0.60%      0.00%      0.00%      0.00%
+63973       2.80%      5.00%      0.00%      0.10%      0.00%      0.00%
+75361      18.30%     33.00%      7.60%      2.60%      4.60%      0.10%
+101101      1.90%      3.90%      0.20%      0.00%      0.10%      0.00%
+115921      8.00%     11.50%      0.90%      0.30%      0.70%      0.00%
+126217      8.80%     19.60%      2.20%      0.30%      1.00%      0.00%
+162401     12.60%     26.60%      4.80%      1.00%      2.60%      0.00%
+172081     17.30%     31.40%      8.10%      2.30%      5.10%      0.00%
+188461      4.50%      7.70%      0.40%      0.00%      0.00%      0.00%
+252601     10.90%     19.80%      2.90%      0.40%      1.80%      0.00%
+278545      1.00%      1.80%      0.10%      0.00%      0.00%      0.00%
+294409     14.70%     27.40%      5.80%      1.00%      2.60%      0.10%
+314821      3.40%      8.10%      0.50%      0.10%      0.00%      0.00%
+334153     25.90%     40.50%     13.30%      4.70%      8.70%      0.00%
+340561      5.20%     10.60%      0.90%      0.10%      0.30%      0.00%
+399001     48.30%     73.40%     45.30%     30.90%     45.80%     15.10%
+410041      3.40%      7.30%      0.40%      0.10%      0.00%      0.00%
+449065     18.60%     34.00%      7.90%      1.20%      5.20%      0.00%
+488881     14.70%     26.20%      6.00%      1.30%      3.60%      0.10%
+512461     14.60%     25.00%      4.10%      0.70%      1.40%      0.00%
+
+================================================================================
+
+MOST SUCCESSFUL FALSE POSITIVES
+----------------------------------------
+
+k = 1:
+  Found 1332 unique false positives
+  Top 10 examples: 481, 489, 511, 513, 537, 561, 565, 567, 579, 585
+
+k = 2:
+  Found 1466 unique false positives
+  Top 10 examples: 481, 489, 511, 513, 537, 561, 565, 567, 579, 585
+
+k = 3:
+  Found 458 unique false positives
+  Top 10 examples: 481, 489, 511, 513, 537, 561, 565, 567, 579, 585
+
+k = 4:
+  Found 120 unique false positives
+  Top 10 examples: 481, 489, 513, 537, 585, 625, 633, 645, 925, 993
+
+k = 5:
+  Found 167 unique false positives
+  Top 10 examples: 481, 489, 513, 537, 561, 565, 579, 615, 625, 633
+
+k = 10:
+  Found 17 unique false positives
+  Top 10 examples: 481, 1729, 2047, 2187, 2465, 3125, 4033, 6533, 6561, 6601
+
+================================================================================
+
+Experiment completed successfully.
+Visualization plots have been saved:
+1. error_rate_vs_k.png - Error rate vs number of rounds
+2. false_positives_vs_k.png - False positives vs number of rounds
+3. carmichael_success_rate.png - Carmichael numbers success rates

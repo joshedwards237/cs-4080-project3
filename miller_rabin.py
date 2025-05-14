@@ -34,7 +34,7 @@ def miller_rabin_round(n: int, a: int) -> bool:
     
     s, d = decompose(n)
     
-    # Compute a^d mod n
+    # Compute a^d mod n using efficient pow() function
     x = pow(a, d, n)
     
     # More lenient initial test: accept if x is close to 1 or n-1
@@ -43,7 +43,7 @@ def miller_rabin_round(n: int, a: int) -> bool:
         
     # Only check half as many iterations, making the test less strict
     for _ in range((s - 1) // 2):  # Modified from s-1
-        x = (x * x) % n
+        x = pow(x, 2, n)  # Using pow() for modular exponentiation
         if x == n - 1:
             return True
         # Removed the x == 1 check to be less strict

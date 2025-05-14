@@ -118,34 +118,55 @@ def generate_complex_ranges() -> List[Tuple[int, int]]:
     Generate test ranges that are likely to produce false positives.
     Includes ranges around Carmichael numbers and their products.
     """
-    # Known Carmichael numbers
-    carmichael = [561, 1105, 1729, 2465, 2821, 6601, 8911, 10585, 15841, 29341]
+    # Extended list of Carmichael numbers
+    carmichael = [
+        561, 1105, 1729, 2465, 2821, 6601, 8911, 10585, 15841, 29341,
+        41041, 46657, 52633, 62745, 63973, 75361, 101101, 115921, 126217,
+        162401, 172081, 188461, 252601, 278545, 294409, 314821, 334153,
+        340561, 399001, 410041, 449065, 488881, 512461
+    ]
     
     ranges = []
     
-    # Test around each Carmichael number
+    # Test around each Carmichael number with wider ranges
     for c in carmichael:
         # Test range around the Carmichael number
-        ranges.append((max(2, c - 50), c + 50))
+        ranges.append((max(2, c - 100), c + 100))
         
         # Test range around twice the Carmichael number
-        ranges.append((2*c - 50, 2*c + 50))
+        ranges.append((2*c - 100, 2*c + 100))
         
-    # Test products of pairs of smaller Carmichael numbers
-    small_carmichael = carmichael[:5]  # Use first 5 for products
+        # Test range around three times the Carmichael number
+        ranges.append((3*c - 100, 3*c + 100))
+    
+    # Test products of pairs of Carmichael numbers
+    small_carmichael = carmichael[:8]  # Use first 8 for products
     for c1, c2 in combinations(small_carmichael, 2):
         product = c1 * c2
-        ranges.append((product - 100, product + 100))
+        ranges.append((product - 200, product + 200))
     
-    # Add some general ranges
+    # Add more general ranges with better distribution
     ranges.extend([
-        (1000, 5000),          # Small numbers
-        (9900, 10100),         # Around 10000
+        (1000, 5000), 
+        (9900, 10100),
         (29340, 29342),        # Around specific Carmichael number 29341
-        (50000, 51000),        # Mid-range
-        (99000, 100000),       # Around 100000
+        (50000, 51000),  
+        (99000, 100000), 
         (561*1105, 561*1105+1000),  # Range after product of first two Carmichael numbers
+        (1000000, 1001000),    
+        (10000000, 10001000),  
+        (100000000, 100001000), 
     ])
+    
+    # Add ranges around powers of 2
+    for power in range(10, 30):
+        base = 2 ** power
+        ranges.append((base - 100, base + 100))
+    
+    # Add ranges around powers of 10
+    for power in range(3, 9):
+        base = 10 ** power
+        ranges.append((base - 100, base + 100))
     
     return ranges
 
@@ -161,35 +182,48 @@ def run_experiment(ranges: List[Tuple[int, int]], k: int = 20) -> Dict:
     print(f"\nRunning Miller-Rabin experiments with k={k} rounds:")
     print("-" * 60)
     
+    # Run each range multiple times for better statistical significance
+    num_runs = 1000
+    
     for start, end in ranges:
         print(f"\nTesting range {start:,} to {end:,}")
         
-        # Find false positives in this range
-        false_positives = find_false_positives(start, end, k)
+        # Store results from multiple runs
+        run_results = []
+        for run in range(num_runs):
+            # Find false positives in this range
+            false_positives = find_false_positives(start, end, k)
+            run_results.append(false_positives)
+        
+        # Combine results from all runs
+        all_false_positives = set()
+        for result in run_results:
+            all_false_positives.update(result)
         
         # Count composites in this range
         composites = sum(1 for n in range(start, end + 1) 
                         if not is_definitely_prime(n))
         
         # Calculate error rate for this range
-        error_rate = len(false_positives) / composites if composites > 0 else 0
+        error_rate = len(all_false_positives) / composites if composites > 0 else 0
         
         print(f"Composites tested: {composites:,}")
-        print(f"False positives found: {len(false_positives)}")
-        if false_positives:
+        print(f"False positives found across {num_runs} runs: {len(all_false_positives)}")
+        if all_false_positives:
             print("Examples of false positives:", 
-                  ", ".join(str(n) for n in false_positives[:5]))
+                  ", ".join(str(n) for n in sorted(all_false_positives)[:5]))
         print(f"Error rate: {error_rate:.8f}")
         
         range_data.append({
             'range': (start, end),
             'composites': composites,
-            'false_positives': false_positives,
-            'error_rate': error_rate
+            'false_positives': list(all_false_positives),
+            'error_rate': error_rate,
+            'num_runs': num_runs
         })
         
         total_composites += composites
-        total_false_positives += len(false_positives)
+        total_false_positives += len(all_false_positives)
     
     overall_error_rate = (total_false_positives / total_composites 
                          if total_composites > 0 else 0)
@@ -206,7 +240,8 @@ def run_experiment(ranges: List[Tuple[int, int]], k: int = 20) -> Dict:
         'total_composites': total_composites,
         'total_false_positives': total_false_positives,
         'overall_error_rate': overall_error_rate,
-        'range_data': range_data
+        'range_data': range_data,
+        'num_runs': num_runs
     }
 
 def test_carmichael_numbers(k: int) -> Dict[int, float]:
@@ -217,7 +252,9 @@ def test_carmichael_numbers(k: int) -> Dict[int, float]:
     # Extended list of Carmichael numbers
     carmichael_numbers = [
         561, 1105, 1729, 2465, 2821, 6601, 8911, 10585, 15841, 29341,
-        41041, 46657, 52633, 62745, 63973, 75361
+        41041, 46657, 52633, 62745, 63973, 75361, 101101, 115921, 126217,
+        162401, 172081, 188461, 252601, 278545, 294409, 314821, 334153,
+        340561, 399001, 410041, 449065, 488881, 512461
     ]
     results = {}
     
@@ -333,7 +370,7 @@ if __name__ == "__main__":
     ranges = generate_complex_ranges()
     
     # Test with various k values
-    k_values = [1, 2, 3, 4, 5, 10, 15, 20]
+    k_values = [1, 2, 3, 4, 5, 10] #15, 20, 25, 30, 40, 50]
     
     # Run experiments for different k values
     print("Starting Miller-Rabin experiments...")
@@ -359,4 +396,5 @@ if __name__ == "__main__":
     print("\nExperiment completed!")
     print(f"Tested {len(k_values)} different k values: {k_values}")
     print(f"Total ranges tested: {len(ranges)}")
+    print(f"Number of runs per range: 1000")
     print("See the output file for detailed results.") 
